@@ -8,6 +8,9 @@ dependencies:
   - name: common
     repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
     version: 1.x.x
+  - name: icinga2
+    repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
+    version: 1.x.x
 
 version: 1.5.1
 appVersion: "v1.0.0"

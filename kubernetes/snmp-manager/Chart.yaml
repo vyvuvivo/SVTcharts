@@ -26,4 +26,7 @@ dependencies:
   - name: common
     repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
     version: 1.x.x
+  - name: maxscale
+    repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
+    version: 1.x.x
 

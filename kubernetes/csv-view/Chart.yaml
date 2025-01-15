@@ -11,6 +11,9 @@ dependencies:
     tags:
       - bitnami-common
     version: 1.x.x
+  - name: preparation
+    repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
+    version: 1.x.x
 
 version: 1.2.0
 appVersion: "v1.0.0"
