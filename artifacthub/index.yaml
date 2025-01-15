@@ -109,7 +109,7 @@ entries:
           url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/context.png
     apiVersion: v2
     appVersion: 2.3.0
-    created: "2025-01-14T11:31:15.36095004+07:00"
+    created: "2025-01-15T14:44:49.570131923+07:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -117,7 +117,7 @@ entries:
       version: 10.5.3
     description: The official Helm chart to deploy Apache Airflow, a platform to programmatically
       author, schedule, and monitor workflows
-    digest: c3b5600ba6dc2d5b2605ea9dee1d253ed38ff4da3957f8fa2f41533119e29f65
+    digest: 49b9b2cf84cdd619d3fa5c99f336c2c0ee0dc6e862425846a519de8b12709eb6
     home: https://airflow.apache.org/
     keywords:
     - apache
@@ -134,544 +134,12 @@ entries:
     urls:
     - airflow-1.10.0.tgz
     version: 1.10.0
-  - annotations:
-      artifacthub.io/changes: |
-        - description: Support ``annotations`` on ``volumeClaimTemplates``
-          kind: added
-          links:
-          - name: '#23433'
-            url: https://github.com/apache/airflow/pull/23433
-        - description: Add support for ``topologySpreadConstraints`` to Helm Chart
-          kind: added
-          links:
-          - name: '#22712'
-            url: https://github.com/apache/airflow/pull/22712
-        - description: Helm support for LocalKubernetesExecutor
-          kind: added
-          links:
-          - name: '#22388'
-            url: https://github.com/apache/airflow/pull/22388
-        - description: Add ``securityContext`` config for Redis to Helm chart
-          kind: added
-          links:
-          - name: '#22182'
-            url: https://github.com/apache/airflow/pull/22182
-        - description: Allow ``annotations`` on Helm DAG PVC
-          kind: added
-          links:
-          - name: '#22261'
-            url: https://github.com/apache/airflow/pull/22261
-        - description: enable optional ``subPath`` for DAGs volume mount
-          kind: added
-          links:
-          - name: '#22323'
-            url: https://github.com/apache/airflow/pull/22323
-        - description: Added support to override ``auth_type`` in ``auth_file`` in PgBouncer
-            Helm configuration
-          kind: added
-          links:
-          - name: '#21999'
-            url: https://github.com/apache/airflow/pull/21999
-        - description: Add ``extraVolumeMounts`` to Flower
-          kind: added
-          links:
-          - name: '#22414'
-            url: https://github.com/apache/airflow/pull/22414
-        - description: Add webserver ``PodDisruptionBudget``
-          kind: added
-          links:
-          - name: '#21735'
-            url: https://github.com/apache/airflow/pull/21735
-        - description: Ensure the messages from migration job show up early
-          kind: changed
-          links:
-          - name: '#23479'
-            url: https://github.com/apache/airflow/pull/23479
-        - description: Allow migration jobs and init containers to be optional
-          kind: changed
-          links:
-          - name: '#22195'
-            url: https://github.com/apache/airflow/pull/22195
-        - description: Use jobs check command for liveness probe check in Airflow 2
-          kind: changed
-          links:
-          - name: '#22143'
-            url: https://github.com/apache/airflow/pull/22143
-        - description: 'Docs: Adds ``resultBackendSecretName`` warning in Helm production
-            docs'
-          kind: changed
-          links:
-          - name: '#23307'
-            url: https://github.com/apache/airflow/pull/23307
-        - description: 'Misc: Update default Airflow version to ``2.3.0``'
-          kind: changed
-          links:
-          - name: '#23386'
-            url: https://github.com/apache/airflow/pull/23386
-        - description: 'Misc: Move the database configuration to a new section'
-          kind: changed
-          links:
-          - name: '#22284'
-            url: https://github.com/apache/airflow/pull/22284
-        - description: 'Misc: Disable flower in chart by default'
-          kind: changed
-          links:
-          - name: '#23737'
-            url: https://github.com/apache/airflow/pull/23737
-      artifacthub.io/links: |
-        - name: Documentation
-          url: https://airflow.apache.org/docs/helm-chart/1.6.0/
-      artifacthub.io/screenshots: |
-        - title: DAGs View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/dags.png
-        - title: Tree View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/grid.png
-        - title: Graph View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/graph.png
-        - title: Calendar View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/calendar.png
-        - title: Variable View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/variable_hidden.png
-        - title: Gantt Chart
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/gantt.png
-        - title: Task Duration
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/duration.png
-        - title: Code View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/code.png
-        - title: Task Instance Context Menu
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/context.png
-    apiVersion: v2
-    appVersion: 2.3.0
-    created: "2025-01-14T11:31:15.470132683+07:00"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: https://charts.bitnami.com/bitnami
-      version: 10.5.3
-    description: The official Helm chart to deploy Apache Airflow, a platform to programmatically
-      author, schedule, and monitor workflows
-    digest: 0e37e04207f270c0a31306afefcbd95e1f725eaa54b24bf319b38b05beb6bca4
-    home: https://airflow.apache.org/
-    keywords:
-    - apache
-    - airflow
-    - workflow
-    - scheduler
-    maintainers:
-    - email: dev@airflow.apache.org
-      name: Apache Airflow PMC
-    name: airflow
-    sources:
-    - https://github.com/apache/airflow
-    type: application
-    urls:
-    - airflow-1.9.0.tgz
-    version: 1.9.0
-  - annotations:
-      artifacthub.io/changes: |
-        - description: Support ``annotations`` on ``volumeClaimTemplates``
-          kind: added
-          links:
-          - name: '#23433'
-            url: https://github.com/apache/airflow/pull/23433
-        - description: Add support for ``topologySpreadConstraints`` to Helm Chart
-          kind: added
-          links:
-          - name: '#22712'
-            url: https://github.com/apache/airflow/pull/22712
-        - description: Helm support for LocalKubernetesExecutor
-          kind: added
-          links:
-          - name: '#22388'
-            url: https://github.com/apache/airflow/pull/22388
-        - description: Add ``securityContext`` config for Redis to Helm chart
-          kind: added
-          links:
-          - name: '#22182'
-            url: https://github.com/apache/airflow/pull/22182
-        - description: Allow ``annotations`` on Helm DAG PVC
-          kind: added
-          links:
-          - name: '#22261'
-            url: https://github.com/apache/airflow/pull/22261
-        - description: enable optional ``subPath`` for DAGs volume mount
-          kind: added
-          links:
-          - name: '#22323'
-            url: https://github.com/apache/airflow/pull/22323
-        - description: Added support to override ``auth_type`` in ``auth_file`` in PgBouncer
-            Helm configuration
-          kind: added
-          links:
-          - name: '#21999'
-            url: https://github.com/apache/airflow/pull/21999
-        - description: Add ``extraVolumeMounts`` to Flower
-          kind: added
-          links:
-          - name: '#22414'
-            url: https://github.com/apache/airflow/pull/22414
-        - description: Add webserver ``PodDisruptionBudget``
-          kind: added
-          links:
-          - name: '#21735'
-            url: https://github.com/apache/airflow/pull/21735
-        - description: Ensure the messages from migration job show up early
-          kind: changed
-          links:
-          - name: '#23479'
-            url: https://github.com/apache/airflow/pull/23479
-        - description: Allow migration jobs and init containers to be optional
-          kind: changed
-          links:
-          - name: '#22195'
-            url: https://github.com/apache/airflow/pull/22195
-        - description: Use jobs check command for liveness probe check in Airflow 2
-          kind: changed
-          links:
-          - name: '#22143'
-            url: https://github.com/apache/airflow/pull/22143
-        - description: 'Docs: Adds ``resultBackendSecretName`` warning in Helm production
-            docs'
-          kind: changed
-          links:
-          - name: '#23307'
-            url: https://github.com/apache/airflow/pull/23307
-        - description: 'Misc: Update default Airflow version to ``2.3.0``'
-          kind: changed
-          links:
-          - name: '#23386'
-            url: https://github.com/apache/airflow/pull/23386
-        - description: 'Misc: Move the database configuration to a new section'
-          kind: changed
-          links:
-          - name: '#22284'
-            url: https://github.com/apache/airflow/pull/22284
-        - description: 'Misc: Disable flower in chart by default'
-          kind: changed
-          links:
-          - name: '#23737'
-            url: https://github.com/apache/airflow/pull/23737
-      artifacthub.io/links: |
-        - name: Documentation
-          url: https://airflow.apache.org/docs/helm-chart/1.6.0/
-      artifacthub.io/screenshots: |
-        - title: DAGs View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/dags.png
-        - title: Tree View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/grid.png
-        - title: Graph View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/graph.png
-        - title: Calendar View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/calendar.png
-        - title: Variable View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/variable_hidden.png
-        - title: Gantt Chart
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/gantt.png
-        - title: Task Duration
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/duration.png
-        - title: Code View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/code.png
-        - title: Task Instance Context Menu
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/context.png
-    apiVersion: v2
-    appVersion: 2.3.0
-    created: "2025-01-14T11:31:15.441776108+07:00"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: https://charts.bitnami.com/bitnami
-      version: 10.5.3
-    description: The official Helm chart to deploy Apache Airflow, a platform to programmatically
-      author, schedule, and monitor workflows
-    digest: 63aef58f3099ca2f8b587de336fbffa438b45defcb7cb85c6a9507d52e231a6f
-    home: https://airflow.apache.org/
-    keywords:
-    - apache
-    - airflow
-    - workflow
-    - scheduler
-    maintainers:
-    - email: dev@airflow.apache.org
-      name: Apache Airflow PMC
-    name: airflow
-    sources:
-    - https://github.com/apache/airflow
-    type: application
-    urls:
-    - airflow-1.8.0.tgz
-    version: 1.8.0
-  - annotations:
-      artifacthub.io/changes: |
-        - description: Support ``annotations`` on ``volumeClaimTemplates``
-          kind: added
-          links:
-          - name: '#23433'
-            url: https://github.com/apache/airflow/pull/23433
-        - description: Add support for ``topologySpreadConstraints`` to Helm Chart
-          kind: added
-          links:
-          - name: '#22712'
-            url: https://github.com/apache/airflow/pull/22712
-        - description: Helm support for LocalKubernetesExecutor
-          kind: added
-          links:
-          - name: '#22388'
-            url: https://github.com/apache/airflow/pull/22388
-        - description: Add ``securityContext`` config for Redis to Helm chart
-          kind: added
-          links:
-          - name: '#22182'
-            url: https://github.com/apache/airflow/pull/22182
-        - description: Allow ``annotations`` on Helm DAG PVC
-          kind: added
-          links:
-          - name: '#22261'
-            url: https://github.com/apache/airflow/pull/22261
-        - description: enable optional ``subPath`` for DAGs volume mount
-          kind: added
-          links:
-          - name: '#22323'
-            url: https://github.com/apache/airflow/pull/22323
-        - description: Added support to override ``auth_type`` in ``auth_file`` in PgBouncer
-            Helm configuration
-          kind: added
-          links:
-          - name: '#21999'
-            url: https://github.com/apache/airflow/pull/21999
-        - description: Add ``extraVolumeMounts`` to Flower
-          kind: added
-          links:
-          - name: '#22414'
-            url: https://github.com/apache/airflow/pull/22414
-        - description: Add webserver ``PodDisruptionBudget``
-          kind: added
-          links:
-          - name: '#21735'
-            url: https://github.com/apache/airflow/pull/21735
-        - description: Ensure the messages from migration job show up early
-          kind: changed
-          links:
-          - name: '#23479'
-            url: https://github.com/apache/airflow/pull/23479
-        - description: Allow migration jobs and init containers to be optional
-          kind: changed
-          links:
-          - name: '#22195'
-            url: https://github.com/apache/airflow/pull/22195
-        - description: Use jobs check command for liveness probe check in Airflow 2
-          kind: changed
-          links:
-          - name: '#22143'
-            url: https://github.com/apache/airflow/pull/22143
-        - description: 'Docs: Adds ``resultBackendSecretName`` warning in Helm production
-            docs'
-          kind: changed
-          links:
-          - name: '#23307'
-            url: https://github.com/apache/airflow/pull/23307
-        - description: 'Misc: Update default Airflow version to ``2.3.0``'
-          kind: changed
-          links:
-          - name: '#23386'
-            url: https://github.com/apache/airflow/pull/23386
-        - description: 'Misc: Move the database configuration to a new section'
-          kind: changed
-          links:
-          - name: '#22284'
-            url: https://github.com/apache/airflow/pull/22284
-        - description: 'Misc: Disable flower in chart by default'
-          kind: changed
-          links:
-          - name: '#23737'
-            url: https://github.com/apache/airflow/pull/23737
-      artifacthub.io/links: |
-        - name: Documentation
-          url: https://airflow.apache.org/docs/helm-chart/1.6.0/
-      artifacthub.io/screenshots: |
-        - title: DAGs View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/dags.png
-        - title: Tree View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/grid.png
-        - title: Graph View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/graph.png
-        - title: Calendar View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/calendar.png
-        - title: Variable View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/variable_hidden.png
-        - title: Gantt Chart
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/gantt.png
-        - title: Task Duration
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/duration.png
-        - title: Code View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/code.png
-        - title: Task Instance Context Menu
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/context.png
-    apiVersion: v2
-    appVersion: 2.3.0
-    created: "2025-01-14T11:31:15.413574212+07:00"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: https://charts.bitnami.com/bitnami
-      version: 10.5.3
-    description: The official Helm chart to deploy Apache Airflow, a platform to programmatically
-      author, schedule, and monitor workflows
-    digest: ede13a96b248bf5f2b7cacb03190ff5108adfb9ded7f2dbe98d99ddf4a8c67a1
-    home: https://airflow.apache.org/
-    keywords:
-    - apache
-    - airflow
-    - workflow
-    - scheduler
-    maintainers:
-    - email: dev@airflow.apache.org
-      name: Apache Airflow PMC
-    name: airflow
-    sources:
-    - https://github.com/apache/airflow
-    type: application
-    urls:
-    - airflow-1.7.0.tgz
-    version: 1.7.0
-  - annotations:
-      artifacthub.io/changes: |
-        - description: Support ``annotations`` on ``volumeClaimTemplates``
-          kind: added
-          links:
-          - name: '#23433'
-            url: https://github.com/apache/airflow/pull/23433
-        - description: Add support for ``topologySpreadConstraints`` to Helm Chart
-          kind: added
-          links:
-          - name: '#22712'
-            url: https://github.com/apache/airflow/pull/22712
-        - description: Helm support for LocalKubernetesExecutor
-          kind: added
-          links:
-          - name: '#22388'
-            url: https://github.com/apache/airflow/pull/22388
-        - description: Add ``securityContext`` config for Redis to Helm chart
-          kind: added
-          links:
-          - name: '#22182'
-            url: https://github.com/apache/airflow/pull/22182
-        - description: Allow ``annotations`` on Helm DAG PVC
-          kind: added
-          links:
-          - name: '#22261'
-            url: https://github.com/apache/airflow/pull/22261
-        - description: enable optional ``subPath`` for DAGs volume mount
-          kind: added
-          links:
-          - name: '#22323'
-            url: https://github.com/apache/airflow/pull/22323
-        - description: Added support to override ``auth_type`` in ``auth_file`` in PgBouncer
-            Helm configuration
-          kind: added
-          links:
-          - name: '#21999'
-            url: https://github.com/apache/airflow/pull/21999
-        - description: Add ``extraVolumeMounts`` to Flower
-          kind: added
-          links:
-          - name: '#22414'
-            url: https://github.com/apache/airflow/pull/22414
-        - description: Add webserver ``PodDisruptionBudget``
-          kind: added
-          links:
-          - name: '#21735'
-            url: https://github.com/apache/airflow/pull/21735
-        - description: Ensure the messages from migration job show up early
-          kind: changed
-          links:
-          - name: '#23479'
-            url: https://github.com/apache/airflow/pull/23479
-        - description: Allow migration jobs and init containers to be optional
-          kind: changed
-          links:
-          - name: '#22195'
-            url: https://github.com/apache/airflow/pull/22195
-        - description: Use jobs check command for liveness probe check in Airflow 2
-          kind: changed
-          links:
-          - name: '#22143'
-            url: https://github.com/apache/airflow/pull/22143
-        - description: 'Docs: Adds ``resultBackendSecretName`` warning in Helm production
-            docs'
-          kind: changed
-          links:
-          - name: '#23307'
-            url: https://github.com/apache/airflow/pull/23307
-        - description: 'Misc: Update default Airflow version to ``2.3.0``'
-          kind: changed
-          links:
-          - name: '#23386'
-            url: https://github.com/apache/airflow/pull/23386
-        - description: 'Misc: Move the database configuration to a new section'
-          kind: changed
-          links:
-          - name: '#22284'
-            url: https://github.com/apache/airflow/pull/22284
-        - description: 'Misc: Disable flower in chart by default'
-          kind: changed
-          links:
-          - name: '#23737'
-            url: https://github.com/apache/airflow/pull/23737
-      artifacthub.io/links: |
-        - name: Documentation
-          url: https://airflow.apache.org/docs/helm-chart/1.6.0/
-      artifacthub.io/screenshots: |
-        - title: DAGs View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/dags.png
-        - title: Tree View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/grid.png
-        - title: Graph View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/graph.png
-        - title: Calendar View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/calendar.png
-        - title: Variable View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/variable_hidden.png
-        - title: Gantt Chart
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/gantt.png
-        - title: Task Duration
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/duration.png
-        - title: Code View
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/code.png
-        - title: Task Instance Context Menu
-          url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/context.png
-    apiVersion: v2
-    appVersion: 2.3.0
-    created: "2025-01-14T11:31:15.388693252+07:00"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: https://charts.bitnami.com/bitnami
-      version: 10.5.3
-    description: The official Helm chart to deploy Apache Airflow, a platform to programmatically
-      author, schedule, and monitor workflows
-    digest: 359cdd58808677a90229f653c83767b65115d1569d343c6d9d937badbd35c951
-    home: https://airflow.apache.org/
-    keywords:
-    - apache
-    - airflow
-    - workflow
-    - scheduler
-    maintainers:
-    - email: dev@airflow.apache.org
-      name: Apache Airflow PMC
-    name: airflow
-    sources:
-    - https://github.com/apache/airflow
-    type: application
-    urls:
-    - airflow-1.6.0.tgz
-    version: 1.6.0
   airflow-postgresql-ha:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 14.5.0
-    created: "2025-01-14T11:31:15.563715123+07:00"
+    created: "2025-01-15T14:44:49.576406917+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
@@ -681,7 +149,7 @@ entries:
     description: This PostgreSQL cluster solution includes the PostgreSQL replication
       manager, an open-source tool for managing replication and failover on PostgreSQL
       clusters.
-    digest: 1941fe4054f596c6c197443abb2f5bc738a8fe9dfffbaff3b8c19b3c7acfd4b1
+    digest: ef37d8f524099eebfc5d4a0d3332db763c691bba5b0a695b6a81f0aa1bd2b817
     home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql-ha
     icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
     keywords:
@@ -704,263 +172,29 @@ entries:
     urls:
     - airflow-postgresql-ha-9.8.6.tgz
     version: 9.8.6
-  - annotations:
-      category: Database
-    apiVersion: v2
-    appVersion: 14.5.0
-    created: "2025-01-14T11:31:15.549265379+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      tags:
-      - bitnami-common
-      version: 1.x.x
-    description: This PostgreSQL cluster solution includes the PostgreSQL replication
-      manager, an open-source tool for managing replication and failover on PostgreSQL
-      clusters.
-    digest: 739574912e3bdc567059040592f3de4b9eec9dffc643785bfb2b51e78e903b8f
-    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql-ha
-    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
-    keywords:
-    - postgresql
-    - repmgr
-    - pgpool
-    - postgres
-    - database
-    - sql
-    - replication
-    - cluster
-    - high availability
-    maintainers:
-    - name: Bitnami
-      url: https://github.com/bitnami/charts
-    name: airflow-postgresql-ha
-    sources:
-    - https://github.com/bitnami/containers/tree/main/bitnami/postgresql
-    - https://www.postgresql.org/
-    urls:
-    - airflow-postgresql-ha-9.7.6.tgz
-    version: 9.7.6
-  - annotations:
-      category: Database
-    apiVersion: v2
-    appVersion: 14.5.0
-    created: "2025-01-14T11:31:15.532518995+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      tags:
-      - bitnami-common
-      version: 1.x.x
-    description: This PostgreSQL cluster solution includes the PostgreSQL replication
-      manager, an open-source tool for managing replication and failover on PostgreSQL
-      clusters.
-    digest: 9b5a0c3329cbb2796a49511d376dc6d7936218369c585956ce5c55c7edd02954
-    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql-ha
-    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
-    keywords:
-    - postgresql
-    - repmgr
-    - pgpool
-    - postgres
-    - database
-    - sql
-    - replication
-    - cluster
-    - high availability
-    maintainers:
-    - name: Bitnami
-      url: https://github.com/bitnami/charts
-    name: airflow-postgresql-ha
-    sources:
-    - https://github.com/bitnami/containers/tree/main/bitnami/postgresql
-    - https://www.postgresql.org/
-    urls:
-    - airflow-postgresql-ha-9.6.6.tgz
-    version: 9.6.6
-  - annotations:
-      category: Database
-    apiVersion: v2
-    appVersion: 14.5.0
-    created: "2025-01-14T11:31:15.514732016+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      tags:
-      - bitnami-common
-      version: 1.x.x
-    description: This PostgreSQL cluster solution includes the PostgreSQL replication
-      manager, an open-source tool for managing replication and failover on PostgreSQL
-      clusters.
-    digest: 3f21043f0767a80ceb8a18c33a9abec75bc98989dbb95a4bbded4c5a4042f23d
-    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql-ha
-    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
-    keywords:
-    - postgresql
-    - repmgr
-    - pgpool
-    - postgres
-    - database
-    - sql
-    - replication
-    - cluster
-    - high availability
-    maintainers:
-    - name: Bitnami
-      url: https://github.com/bitnami/charts
-    name: airflow-postgresql-ha
-    sources:
-    - https://github.com/bitnami/containers/tree/main/bitnami/postgresql
-    - https://www.postgresql.org/
-    urls:
-    - airflow-postgresql-ha-9.5.6.tgz
-    version: 9.5.6
-  - annotations:
-      category: Database
-    apiVersion: v2
-    appVersion: 14.5.0
-    created: "2025-01-14T11:31:15.490566493+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      tags:
-      - bitnami-common
-      version: 1.x.x
-    description: This PostgreSQL cluster solution includes the PostgreSQL replication
-      manager, an open-source tool for managing replication and failover on PostgreSQL
-      clusters.
-    digest: 7350a574c5d95d6862f7fd4fc0b84ed8a7f1c08e72d8b86489ce5c247345f2b8
-    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql-ha
-    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
-    keywords:
-    - postgresql
-    - repmgr
-    - pgpool
-    - postgres
-    - database
-    - sql
-    - replication
-    - cluster
-    - high availability
-    maintainers:
-    - name: Bitnami
-      url: https://github.com/bitnami/charts
-    name: airflow-postgresql-ha
-    sources:
-    - https://github.com/bitnami/containers/tree/main/bitnami/postgresql
-    - https://www.postgresql.org/
-    urls:
-    - airflow-postgresql-ha-9.4.6.tgz
-    version: 9.4.6
   bngblaster:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.595539364+07:00"
+    created: "2025-01-15T14:44:49.57785887+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: x.x.x
     description: A Helm chart for Streamlit app
-    digest: 3b642af11bcda5a7c0953a2d722f9ea60b153f4c77c5a077c89f2a443f85c752
+    digest: e288a69c9c68fa952e2d40290123656d6a975886381dd3ca417bd0194ce6b1a4
     name: bngblaster
     urls:
     - bngblaster-v0.6.2.tgz
     version: v0.6.2
-  - apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.592454817+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    description: A Helm chart for Streamlit app
-    digest: d3aa6846a7c452a5089335f6f09b60b9efa14c44da643ab13383fdde3285c8c8
-    name: bngblaster
-    urls:
-    - bngblaster-0.6.1.tgz
-    version: 0.6.1
-  - apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.588763945+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    description: A Helm chart for Streamlit app
-    digest: 6ddbdecb535f67c23ccd83e90ab3bcbe05ffafba80cec27be7df9cfd94f5353b
-    name: bngblaster
-    urls:
-    - bngblaster-0.5.1.tgz
-    version: 0.5.1
-  - apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.585764891+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    description: A Helm chart for Streamlit app
-    digest: 902a34317fec0be2ff0f9577eadfc9ed25d75333fb23202cfd709f21a3a21704
-    name: bngblaster
-    urls:
-    - bngblaster-0.4.1.tgz
-    version: 0.4.1
-  - apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.582447414+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    description: A Helm chart for Streamlit app
-    digest: 686f138ac94f1f591997f6c9f3b769ef26274a468b84081aaff9ade786b1faf5
-    name: bngblaster
-    urls:
-    - bngblaster-0.3.1.tgz
-    version: 0.3.1
-  - apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.579161276+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    - condition: global.syncthing.enabled
-      name: syncthing
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    description: A Helm chart for Streamlit app
-    digest: 357a017f54114ea0dcc989091cb3b21171a4f084a93a2b635d8175a7c9752e82
-    name: bngblaster
-    urls:
-    - bngblaster-0.2.1.tgz
-    version: 0.2.1
-  - apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.572205122+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    - condition: global.syncthing.enabled
-      name: syncthing
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    description: A Helm chart for Streamlit app
-    digest: 1cdf7e09959c460f5517dfa789cd47ae6786fa941e1b183fba80d01e68577e45
-    name: bngblaster
-    urls:
-    - bngblaster-0.2.0.tgz
-    version: 0.2.0
   common:
   - annotations:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.4.3
-    created: "2025-01-14T11:31:15.598244952+07:00"
+    created: "2025-01-15T14:44:49.578677824+07:00"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
-    digest: 6de98516cfe1286a50c29da41d22e19da99fddafd85255b672e42518f93fd524
+    digest: e869fa7e0cf11d512af5d2a0359bd28a1fede35e63bb5bfbe3e3d4868d96ef66
     name: common
     urls:
     - common-1.4.3.tgz
@@ -970,90 +204,39 @@ entries:
       category: Frontend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.609579883+07:00"
+    created: "2025-01-15T14:44:49.58213276+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       tags:
       - bitnami-common
       version: 1.x.x
+    - name: preparation
+      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
+      version: 1.x.x
     description: SVTECH Rundeck CSV View
-    digest: 2981e4b80644e91fc89f0442a14133727f4b90ebb413e44ff50122793e832da8
+    digest: 2529da07f881b0e05db34004d41c8e62da181672bb46e90bd2378d2f13367247
     name: csv-view
     urls:
     - csv-view-1.2.0.tgz
     version: 1.2.0
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.606083414+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      tags:
-      - bitnami-common
-      version: 1.x.x
-    description: SVTECH Rundeck CSV View
-    digest: de9b19f40c0fc76a24093f9f64330847c2f3bc3cfcd93c70ac077464ff38ce7f
-    name: csv-view
-    urls:
-    - csv-view-1.1.0.tgz
-    version: 1.1.0
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.602483268+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      tags:
-      - bitnami-common
-      version: 1.x.x
-    description: SVTECH Rundeck CSV View
-    digest: 5fa3054ee7dab9465e9bca8bf50a714fadf28ab7a8d15f9e6266df7f8feeeb85
-    name: csv-view
-    urls:
-    - csv-view-1.0.0.tgz
-    version: 1.0.0
   daloradius:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-01-14T11:31:15.621681473+07:00"
+    created: "2025-01-15T14:44:49.583677413+07:00"
     description: A Helm chart for Kubernetes
-    digest: 2db6ab6dc166a662016b808796a06a2fcb13d9535a2b481fa4a3b7c609d22957
+    digest: ac5d7a54cd42c8fdc5bef8947364e7c81d9251398e6e68a8fc80d5c0c903a0fe
     name: daloradius
     type: application
     urls:
     - daloradius-1.1.1.tgz
     version: 1.1.1
-  - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2025-01-14T11:31:15.617976108+07:00"
-    description: A Helm chart for Kubernetes
-    digest: b6f60337740dbd5b8f1e3e22289dbb8a47a4edbc6f11c6a84922f64430d0c493
-    name: daloradius
-    type: application
-    urls:
-    - daloradius-1.0.1.tgz
-    version: 1.0.1
-  - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2025-01-14T11:31:15.613702592+07:00"
-    description: A Helm chart for Kubernetes
-    digest: 82e3dfacfd554577a2e6cba28586aa1d2552c38e369ca172a4b296fb9303f59d
-    name: daloradius
-    type: application
-    urls:
-    - daloradius-1.0.0.tgz
-    version: 1.0.0
   debuger:
   - annotations:
       category: Frontend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.633632145+07:00"
+    created: "2025-01-15T14:44:49.585131051+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
@@ -1061,123 +244,37 @@ entries:
       - bitnami-common
       version: 1.x.x
     description: SVTECH Debuger
-    digest: 5e0eda3890df45903e6e5d106ae4f5bedd5d1f47920817167855a3feea084b88
+    digest: 17c467de1aa1c9083b4cfe40738279a80d4e1b7cce40356980e508e8362fdd5c
     name: debuger
     urls:
     - debuger-1.2.0.tgz
     version: 1.2.0
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.6297212+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      tags:
-      - bitnami-common
-      version: 1.x.x
-    description: SVTECH Debuger
-    digest: 8959481e328886290377e47475992397ae26de9545ba5a5254066aeb736a216c
-    name: debuger
-    urls:
-    - debuger-1.1.0.tgz
-    version: 1.1.0
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.624611805+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      tags:
-      - bitnami-common
-      version: 1.x.x
-    description: SVTECH Debuger
-    digest: 567f224e38f1b97010dc973158f6545f66a43f34719c0ceb298f31ba97a3a51c
-    name: debuger
-    urls:
-    - debuger-1.0.0.tgz
-    version: 1.0.0
   docxtemplate:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.648376661+07:00"
+    created: "2025-01-15T14:44:49.586507977+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: x.x.x
     description: A Helm chart for Tender Document Generator app
-    digest: 1b5ed25554e0a57e76351cb6198579cc5188d10b31dfba5f65693b63b3fff062
+    digest: dd0da6874e6194fc22a92020d70a0fbce7e15a22bae8ea6e5b1f0815358d760c
     name: docxtemplate
     urls:
     - docxtemplate-v0.6.1.tgz
     version: v0.6.1
-  - apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.645359641+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    description: A Helm chart for Tender Document Generator app
-    digest: 98164a99599ecffd0ec731b16a051c7b311e3ca54f004bf90760e9dbf794a4df
-    name: docxtemplate
-    urls:
-    - docxtemplate-0.6.0.tgz
-    version: 0.6.0
-  - apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.642437795+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    description: A Helm chart for Tender Document Generator app
-    digest: 9d9b8c5c4e4564ce0373d91463f52f265a928c6b917b7144285691df487c8e03
-    name: docxtemplate
-    urls:
-    - docxtemplate-0.5.0.tgz
-    version: 0.5.0
-  - apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.639489523+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    description: A Helm chart for Tender Document Generator app
-    digest: 9e021eb1f40b5ac6e2670958847da6c65da87b6d71e401da8008e5bd1a2200b6
-    name: docxtemplate
-    urls:
-    - docxtemplate-0.4.0.tgz
-    version: 0.4.0
-  - apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.636599122+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    description: A Helm chart for Tender Document Generator app
-    digest: 9f730fbf14649174c18a6caef3c870743ac7aa5ce10b71e41d093e5f2dffc438
-    name: docxtemplate
-    urls:
-    - docxtemplate-0.3.0.tgz
-    version: 0.3.0
   elasticsearch:
   - annotations:
       category: elasticsearch
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.651299138+07:00"
+    created: "2025-01-15T14:44:49.587684777+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: elasticsearch
-    digest: 7d947b740861da1503daff8375f1617d8235ceef06d00b6d91d86cc747a4a718
+    digest: e6c6a8003b364b85f296333e1cad2ecbbec69791f74a6e25c4e45fd847d7b026
     name: elasticsearch
     urls:
     - elasticsearch-1.0.0.tgz
@@ -1187,13 +284,13 @@ entries:
       category: filebeat
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.655480693+07:00"
+    created: "2025-01-15T14:44:49.588719697+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: filebeat
-    digest: 253d448a8dab123207d1a1cacca7921bf431c69779891ad9c866da1daa9081c7
+    digest: 24d018b8600062ea5e5ddd2b813ae1e1073d62a66b57830bc69cc9736816a6ad
     name: filebeat
     urls:
     - filebeat-1.0.0.tgz
@@ -1203,7 +300,7 @@ entries:
       category: AccessManagement
     apiVersion: v2
     appVersion: 3.0.26
-    created: "2025-01-14T11:31:15.717327861+07:00"
+    created: "2025-01-15T14:44:49.597086315+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
@@ -1211,420 +308,138 @@ entries:
     description: FreeRADIUS is a modular, high performance free RADIUS suite developed
       and distributed under the GNU General Public License, version 2, and is free
       for download and use.
-    digest: c0f92d447385b02820b30b63142be26d1f434dc4af78db19327f68d43cda75a1
+    digest: bf4d7602bcaf2e0c5f83ee2deb82dca599d04af18ac589ddc6ecd69651097788
     name: freeradius
     type: application
     urls:
     - freeradius-0.2.6.tgz
     version: 0.2.6
-  - annotations:
-      category: AccessManagement
-    apiVersion: v2
-    appVersion: 3.0.26
-    created: "2025-01-14T11:31:15.697430731+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: FreeRADIUS is a modular, high performance free RADIUS suite developed
-      and distributed under the GNU General Public License, version 2, and is free
-      for download and use.
-    digest: 5bf323f1c3eeaf486d56539a7acfe681ea94689a24a4135ac6f7cb37878ed481
-    name: freeradius
-    type: application
-    urls:
-    - freeradius-0.1.6.tgz
-    version: 0.1.6
-  - annotations:
-      category: AccessManagement
-    apiVersion: v2
-    appVersion: 3.0.26
-    created: "2025-01-14T11:31:15.677707075+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: FreeRADIUS is a modular, high performance free RADIUS suite developed
-      and distributed under the GNU General Public License, version 2, and is free
-      for download and use.
-    digest: e1153f9bead16c59b8514b1902ab69e25c451581413d11dae288d6579a1b0c8d
-    name: freeradius
-    type: application
-    urls:
-    - freeradius-0.1.5.tgz
-    version: 0.1.5
   gitlist:
   - annotations:
       category: Frontend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.723576645+07:00"
+    created: "2025-01-15T14:44:49.59855451+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Gitlist
-    digest: 0916d1af9312074eafc4cc7a383c01394c102d7222cfd52c58d6f6b531759612
+    digest: 434438dc29a4c89b7082c9374c0c4f4f0218da07925578c5aca193ebef9df342
     name: gitlist
     urls:
     - gitlist-1.1.0.tgz
     version: 1.1.0
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.720426734+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Gitlist
-    digest: 0d068e72661ca647c733f8a1f7abba1a7fc43ab1a73430fd5c443fbf026241f4
-    name: gitlist
-    urls:
-    - gitlist-1.0.0.tgz
-    version: 1.0.0
   grafana:
   - annotations:
       category: Frontend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.739048034+07:00"
+    created: "2025-01-15T14:44:49.601936645+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
+    - name: preparation
+      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
+      version: 1.x.x
+    - name: maxscale
+      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
+      version: 1.x.x
     description: SVTECH Grafana
-    digest: 2ee61f4731cf5763440d9ce712a69f169b470c4b0708e210779a349f621ab351
+    digest: 46c100be371913272b9e3782e1abcc130d656f093c0dd03b0a3352ad9d479a91
     name: grafana
     urls:
     - grafana-1.2.1.tgz
     version: 1.2.1
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.734162573+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Grafana
-    digest: 10dd90a1e139ad45978b2cef69f516031ef21e27951aa57be863d21f8a2c832c
-    name: grafana
-    urls:
-    - grafana-1.1.1.tgz
-    version: 1.1.1
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.730581343+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Grafana
-    digest: 65fbcc73aa11b7f480423a59742902cd53de1f5a93ab2aa455692472af026b7e
-    name: grafana
-    urls:
-    - grafana-1.0.1.tgz
-    version: 1.0.1
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.72697814+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Grafana
-    digest: 537c90346dafea21927b6d0d6e068b859ec4f1c399a122691cb165d2a7376b39
-    name: grafana
-    urls:
-    - grafana-1.0.0.tgz
-    version: 1.0.0
   host-path-pv:
   - annotations:
       category: Storage
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.749460278+07:00"
+    created: "2025-01-15T14:44:49.603818936+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH HostPath Persistent Volume
-    digest: befbd23f0089554c6ba323cf959eba75b5072edcc1a9d63a02d045b66ef8ef13
+    digest: a153922adbcf88e19b71710e7fec4cad4f296caba54b590bdade77cb67b2ad2d
     name: host-path-pv
     urls:
     - host-path-pv-1.1.1.tgz
     version: 1.1.1
-  - annotations:
-      category: Storage
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.74530813+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH HostPath Persistent Volume
-    digest: 15e61d1b5e81b31e966690786e80acd0ed876b77d1a699e68b549d8dfa20c7d0
-    name: host-path-pv
-    urls:
-    - host-path-pv-1.1.0.tgz
-    version: 1.1.0
-  - annotations:
-      category: Storage
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.741895562+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH HostPath Persistent Volume
-    digest: b48902e10580250951ae4a7380398a6e1a0fcc13293f94de4d8097ed52efb4fa
-    name: host-path-pv
-    urls:
-    - host-path-pv-1.0.0.tgz
-    version: 1.0.0
   icinga2:
   - annotations:
       category: Backend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.782384468+07:00"
+    created: "2025-01-15T14:44:49.611573258+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
-    description: SVTECH Icinga2
-    digest: 309eb667990f3ed9ba596889f903387aa14a269d598b8940713cf93319e72785
-    name: icinga2
-    urls:
-    - icinga2-1.3.2.tgz
-    version: 1.3.2
-  - annotations:
-      category: Backend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.777418342+07:00"
-    dependencies:
-    - name: common
+    - name: preparation
+      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
+      version: 1.x.x
+    - name: influxdb
+      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
+      version: 2.x.x
+    - name: maxscale
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Icinga2
-    digest: 798d8133f0c8f8206cd73e65cc3734ad21bbc099171768a46a26bc3f359ec89d
+    digest: b78480cb2f4c153e1b0550219c5b0e006f7958f836907e1309c2dd89edc0bae6
     name: icinga2
     urls:
-    - icinga2-1.3.1.tgz
-    version: 1.3.1
-  - annotations:
-      category: Backend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.771612773+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Icinga2
-    digest: 8fe3b31fb57fd18455e5436ddaed52672040ebc2b6cf28bc52ced807535b91d9
-    name: icinga2
-    urls:
-    - icinga2-1.2.1.tgz
-    version: 1.2.1
-  - annotations:
-      category: Backend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.766461308+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Icinga2
-    digest: f3a6422baa591ecfc5e87e6d0fef9554209af4949ddfeebd994f15e297dd44aa
-    name: icinga2
-    urls:
-    - icinga2-1.1.1.tgz
-    version: 1.1.1
-  - annotations:
-      category: Backend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.759774001+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Icinga2
-    digest: e45bd4b0a32116d24e16b4f26581db6ecdd96dde0fb56a66671fce2dbfdb1c13
-    name: icinga2
-    urls:
-    - icinga2-1.1.0.tgz
-    version: 1.1.0
-  - annotations:
-      category: Backend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.754989548+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Icinga2
-    digest: d18be9ce6a84cc267f3b129dd663b70f7ad3118fc3e09e56a62aa6c439813b8d
-    name: icinga2
-    urls:
-    - icinga2-1.0.0.tgz
-    version: 1.0.0
+    - icinga2-1.3.3.tgz
+    version: 1.3.3
   icinga2-report:
   - annotations:
       category: backend
     apiVersion: v2
     appVersion: v1.7.0
-    created: "2025-01-14T11:31:15.79002309+07:00"
+    created: "2025-01-15T14:44:49.61299446+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Icinga2 Report
-    digest: a7583900754baf6bf776599d3571760baca93fb6f0bb1cfdf5fddc4cb6d4daee
+    digest: 3e738aa551104d6041c6b24483ac1b934a1248e2e85749e3977839207e68e079
     name: icinga2-report
     urls:
     - icinga2-report-1.1.0.tgz
     version: 1.1.0
-  - annotations:
-      category: backend
-    apiVersion: v2
-    appVersion: v1.7.0
-    created: "2025-01-14T11:31:15.786089924+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Icinga2 Report
-    digest: 34316ea1d4b39cfcc40f7e673ab0419f689426ac1578dd33131a6a3e4299e5a9
-    name: icinga2-report
-    urls:
-    - icinga2-report-1.0.0.tgz
-    version: 1.0.0
   icingaweb:
   - annotations:
       category: icingaweb
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.846375762+07:00"
+    created: "2025-01-15T14:44:49.618132021+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
-    digest: 32a28452582ef2054aaf556cfc926f750b600bc22cad753ab8f191a849744091
+    - name: icinga2
+      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
+      version: 1.x.x
+    digest: ddc56630d3e36dce45c0922d0ac841533b6c3d9033953b33949116dd9f639eb5
     name: icingaweb
     urls:
     - icingaweb-1.5.1.tgz
     version: 1.5.1
-  - annotations:
-      category: icingaweb
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.841563141+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    digest: b2593c9ce53928ab28ba77cbf169f66591f1af902d7f9ef724c69dcee98d8894
-    name: icingaweb
-    urls:
-    - icingaweb-1.4.1.tgz
-    version: 1.4.1
-  - annotations:
-      category: icingaweb
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.833462471+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    digest: 8ee4ca659c549586fe74d262ecf07ff81d27a87a9a77c7c1f18d881cdec2993c
-    name: icingaweb
-    urls:
-    - icingaweb-1.3.1.tgz
-    version: 1.3.1
-  - annotations:
-      category: icingaweb
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.826593179+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    digest: 91882ab5c71404c82cf95059d282d7a09bdcd00ab2b93597d4225cfefee78f68
-    name: icingaweb
-    urls:
-    - icingaweb-1.2.1.tgz
-    version: 1.2.1
-  - annotations:
-      category: icingaweb
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.81988319+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    digest: f84a271cd9d806743ce0e03bfe929cd2fbdd2109c0ec8224f241981f16afa8de
-    name: icingaweb
-    urls:
-    - icingaweb-1.2.0.tgz
-    version: 1.2.0
-  - annotations:
-      category: icingaweb
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.811065396+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    digest: 003c301d7931df24936022837c859353c4a7fa25124a9aadbb955028c52d8e5a
-    name: icingaweb
-    urls:
-    - icingaweb-1.1.0.tgz
-    version: 1.1.0
-  - annotations:
-      category: icingaweb
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.802343735+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    digest: 6c214c804655832c319a5228ffb8086bd4bd2b7e77c3b652516ac23e56cb23d6
-    name: icingaweb
-    urls:
-    - icingaweb-1.0.0.tgz
-    version: 1.0.0
   influxdb:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 2.0.6
-    created: "2025-01-14T11:31:15.854462409+07:00"
+    created: "2025-01-15T14:44:49.621400963+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: InfluxDB(TM) is an open source time-series database designed to handle
       large write and read loads in real-time.
-    digest: 3b9b42da8a15075fba41040720a4ca54d6ceb7320c1c091f9aa574b422afa813
+    digest: 81222f5eaf20bb27216380d17bf2c857811a956f2c978040c54323eb95ab9604
     keywords:
     - influxdb
     - tick
@@ -1639,13 +454,13 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.858022474+07:00"
+    created: "2025-01-15T14:44:49.622696371+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH ingress-nginx
-    digest: 3934df65f1a92ecd6951b1d23ff7e66602ae017dbac9c83924811d6f3efa7b06
+    digest: 75e3220df1e61d6b96f8f2fe8f8f9bdf97bf74011788757a3982b4671fd7bb58
     name: ingress-nginx
     urls:
     - ingress-nginx-1.0.0.tgz
@@ -1653,72 +468,30 @@ entries:
   juniper-syslog-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-01-14T11:31:15.872550478+07:00"
+    created: "2025-01-15T14:44:49.623782917+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: A Helm chart for Kubernetes
-    digest: d9c3d6835e538ea0e111d5186a004538993c1ca02ea5273f80324618a8c6f1ca
+    digest: 986539d6f81553f8a4f03fdc2a3ddbe3b7c5c48a72b1de22b7eb749c5951f4df
     name: juniper-syslog-api
     type: application
     urls:
     - juniper-syslog-api-0.3.1.tgz
     version: 0.3.1
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-01-14T11:31:15.868614201+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: A Helm chart for Kubernetes
-    digest: d84df3eef884fa6b0b848a64af99970effe13cba9898d3e90d902e75961d059a
-    name: juniper-syslog-api
-    type: application
-    urls:
-    - juniper-syslog-api-0.2.1.tgz
-    version: 0.2.1
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-01-14T11:31:15.864768063+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: A Helm chart for Kubernetes
-    digest: cbcd691111b66703f3d7d4dd351492d785e9eed58cf64399314dd3c95faa9271
-    name: juniper-syslog-api
-    type: application
-    urls:
-    - juniper-syslog-api-0.1.1.tgz
-    version: 0.1.1
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-01-14T11:31:15.860690302+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: A Helm chart for Kubernetes
-    digest: 2356a7f047abd7e835205c1d3fa609f07abb697980a056b2462fb69533445b3c
-    name: juniper-syslog-api
-    type: application
-    urls:
-    - juniper-syslog-api-0.1.0.tgz
-    version: 0.1.0
   kibana:
   - annotations:
       category: kibana
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.875125331+07:00"
+    created: "2025-01-15T14:44:49.62481942+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: kibana
-    digest: bee1037d9c4eb3ee71f8cf768bd4563923365eb02c536d6d40ded0df64ed2782
+    digest: 79efe19e810313749a57e6d58b3b6021972fc0d50c5734cc7b68fe3329b29162
     name: kibana
     urls:
     - kibana-1.0.0.tgz
@@ -1728,13 +501,13 @@ entries:
       category: logstash
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.883390183+07:00"
+    created: "2025-01-15T14:44:49.629179606+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: logstash
-    digest: 441efd3491b40bdef3faf97b40735f9af47a41cac4f5d5685c98eebba130d830
+    digest: 229cec08b26f1901bf7111f9b5d4fec0e1a9c27423abbf6508ce40a9f16258db
     name: logstash
     urls:
     - logstash-1.0.0.tgz
@@ -1744,14 +517,14 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 10.5.8
-    created: "2025-01-14T11:31:15.890332094+07:00"
+    created: "2025-01-15T14:44:49.632119096+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: MariaDB Galera is a multi-master database cluster solution for synchronous
       replication and high availability.
-    digest: 4437b5c1e6434086d9e3ad484695c2d56fdb252cfd68b8bc129ac7ef7fb43133
+    digest: 5471e78568c72f7831e33c90fb1799ddc18c58f7f216f49776d4af060397c0ba
     name: mariadb-galera
     urls:
     - mariadb-galera-5.6.8.tgz
@@ -1761,842 +534,212 @@ entries:
       category: Maxscale
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.907957667+07:00"
+    created: "2025-01-15T14:44:49.63325537+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Maxscale
-    digest: f18f8a7483ec990f6d854c64b067fb6d1cc0c6bfad7c917a563b6b09f3e79238
+    digest: 76085c3aabd953d880b078fdb06ed7bd8a6cb2ac284a1ab98a71b06f411ee5b3
     name: maxscale
     urls:
     - maxscale-1.4.1.tgz
     version: 1.4.1
-  - annotations:
-      category: Maxscale
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.905361927+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Maxscale
-    digest: 00c23256362ac77008bf55ba1953573db84afbbca52909bea72dd0522acf9bc5
-    name: maxscale
-    urls:
-    - maxscale-1.3.1.tgz
-    version: 1.3.1
-  - annotations:
-      category: Maxscale
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.902665436+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Maxscale
-    digest: e7daf8501a25f0178f6929f9233a88558f81e7c0cc33162d3da3088b7ccdc17d
-    name: maxscale
-    urls:
-    - maxscale-1.2.1.tgz
-    version: 1.2.1
-  - annotations:
-      category: Maxscale
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.899949817+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Maxscale
-    digest: 070d2d6ee950edf7e9ddede51c677b70fb02bcf328367d59f073c08274ed88c5
-    name: maxscale
-    urls:
-    - maxscale-1.1.1.tgz
-    version: 1.1.1
-  - annotations:
-      category: Maxscale
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.897184438+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Maxscale
-    digest: a2544a01ff843dd4a945777976c0638ab3cd6453403f19dac36a5dc1714b74a7
-    name: maxscale
-    urls:
-    - maxscale-1.0.1.tgz
-    version: 1.0.1
-  - annotations:
-      category: Maxscale
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.893133871+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Maxscale
-    digest: 4d620d4404afdb6026c6ffe59cdac64e7a469581d615018835aff98df94efb62
-    name: maxscale
-    urls:
-    - maxscale-1.0.0.tgz
-    version: 1.0.0
   nagvis:
   - annotations:
       category: Frontend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.917217838+07:00"
+    created: "2025-01-15T14:44:49.634591651+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Nagvis
-    digest: 4653e78d282deac2ea2c1840c4dabc95d10343e78f57de0e62b022d41701978c
+    digest: 9209466b2eac4ee516b75d7c3489b51aba4b32a4e31e4bdc10abe4a0732711e3
     name: nagvis
     urls:
     - nagvis-1.2.0.tgz
     version: 1.2.0
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.914252677+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Nagvis
-    digest: 555a1eb823a8aa6c289791743acd3c604c5f188627af3aaf69cdf9c648d302bd
-    name: nagvis
-    urls:
-    - nagvis-1.1.0.tgz
-    version: 1.1.0
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.911290861+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Nagvis
-    digest: d403035433498fe17900b7b009c44772632f846d9d04e12e0af463abadc8cde4
-    name: nagvis
-    urls:
-    - nagvis-1.0.0.tgz
-    version: 1.0.0
   postfix:
   - annotations:
       category: Backend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.928165609+07:00"
+    created: "2025-01-15T14:44:49.635931698+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Postfix
-    digest: c15d2760b5ccc181c75afda303ec01a7bd4fbc14a4f3cba36b4e1a5d6cddfef0
+    digest: a28f4b58ad014cb07d3a8a85b2087c0253005dd164b64e06f7bf67fa86d6cbb0
     name: postfix
     urls:
     - postfix-1.2.0.tgz
     version: 1.2.0
-  - annotations:
-      category: Backend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.924992982+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Postfix
-    digest: fec8e06de058c17c9cec8b7fa86663f07c31afac5c30feffdeb68c03518b2620
-    name: postfix
-    urls:
-    - postfix-1.1.0.tgz
-    version: 1.1.0
-  - annotations:
-      category: Backend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.920272711+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Postfix
-    digest: 02f0c91876b77670954ba48152aedf0d3587421b74202865a0995b6adbdf5f1a
-    name: postfix
-    urls:
-    - postfix-1.0.0.tgz
-    version: 1.0.0
   preparation:
   - annotations:
       category: Preparation
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.94451706+07:00"
+    created: "2025-01-15T14:44:49.637060437+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Preparation
-    digest: 313967bbdf1b736acab4e023d005aa77689d20d6b11deaa164ea79652c83c8bf
+    digest: 309702f4bbb7c26fce27379a32c7867599c0f9bb83cf2fbbf1449eed64169b7e
     name: preparation
     urls:
     - preparation-1.4.1.tgz
     version: 1.4.1
-  - annotations:
-      category: Preparation
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.941775939+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Preparation
-    digest: 583de159f33c00b365bc52f406960681b653c035698b2965300335f7ab498347
-    name: preparation
-    urls:
-    - preparation-1.3.1.tgz
-    version: 1.3.1
-  - annotations:
-      category: Preparation
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.938724116+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Preparation
-    digest: db04b028ccc63fcdc3500c39edc1306ff889979a7989adc8940f261f9c0e02d9
-    name: preparation
-    urls:
-    - preparation-1.3.0.tgz
-    version: 1.3.0
-  - annotations:
-      category: Preparation
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.935846305+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Preparation
-    digest: 160f5ee4b426aa3bb23b3138b7b80e0c6fe7c961b97b58ab465ac4ce46408f8b
-    name: preparation
-    urls:
-    - preparation-1.2.0.tgz
-    version: 1.2.0
-  - annotations:
-      category: Preparation
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.933318672+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Preparation
-    digest: 092fedce3b9895f91ea9fd1d4fb70891f47722b6a00ca1cb093aac0bf36e6b17
-    name: preparation
-    urls:
-    - preparation-1.1.0.tgz
-    version: 1.1.0
-  - annotations:
-      category: Preparation
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.930795815+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Preparation
-    digest: 1ebd637086d456a5304ec573dec97e97f0cd3e29dca23484265bd5f3301d68b1
-    name: preparation
-    urls:
-    - preparation-1.0.0.tgz
-    version: 1.0.0
   proxy:
   - annotations:
       category: Proxy
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.982168655+07:00"
+    created: "2025-01-15T14:44:49.641893849+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Proxy
-    digest: 123693c5889595e945b6c220472c6740ac8fd9324076b8d596cd69ffaad839b0
+    digest: cc26edf84222d89ba1b983c12e8466b9f1f301e9a41f146fde2395117ef44cf7
     name: proxy
     urls:
     - proxy-1.2.0.tgz
     version: 1.2.0
-  - annotations:
-      category: Proxy
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.969903645+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Proxy
-    digest: cdfe9ce7b47a7e441d73d657b2240b2dc27e7e78f0f31ecd2ee3a176f6207fd8
-    name: proxy
-    urls:
-    - proxy-1.1.0.tgz
-    version: 1.1.0
-  - annotations:
-      category: Proxy
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:15.958200666+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Proxy
-    digest: 96fccddd2caecc0effb83eae7dcacf9d143a98a6d594587ddfc726c175dc1a78
-    name: proxy
-    urls:
-    - proxy-1.0.0.tgz
-    version: 1.0.0
   rundeck:
   - annotations:
       category: Frontend
     apiVersion: v2
     appVersion: v1.1.0
-    created: "2025-01-14T11:31:16.03926014+07:00"
+    created: "2025-01-15T14:44:49.645804252+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
+    - name: preparation
+      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
+      version: 1.x.x
+    - name: maxscale
+      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
+      version: 1.x.x
     description: SVTECH Rundeck
-    digest: 1a34de6419627fb35d1e21020258a47d9e198e348467589d57f34d9e51bbac0b
+    digest: 3576e3dcd114914de73182fb2ce2559780ad382d322eeee7cf9aa930839f2c6d
     name: rundeck
     urls:
     - rundeck-1.6.2.tgz
     version: 1.6.2
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.1.0
-    created: "2025-01-14T11:31:16.032685613+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Rundeck
-    digest: 973c9fa4c4ee589164e7f84250ca44f7fb3dcfb731aadf3fca82ebe7b4b3913f
-    name: rundeck
-    urls:
-    - rundeck-1.5.2.tgz
-    version: 1.5.2
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.1.0
-    created: "2025-01-14T11:31:16.02734714+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Rundeck
-    digest: e1fdac70ea0c0c24f7134857ed2ebe6f0a15008ffbf3f416d59753bc5f997d1b
-    name: rundeck
-    urls:
-    - rundeck-1.4.2.tgz
-    version: 1.4.2
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.1.0
-    created: "2025-01-14T11:31:16.022277684+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Rundeck
-    digest: 48878fc28882588404faf001d097559b283822edbc6915cfc9d84e6782e236e9
-    name: rundeck
-    urls:
-    - rundeck-1.3.2.tgz
-    version: 1.3.2
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.1.0
-    created: "2025-01-14T11:31:16.016706424+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Rundeck
-    digest: 2617d5786bae1e608780e26ba8b00292da1e9aed436cb9a20a24be95cf4b0c73
-    name: rundeck
-    urls:
-    - rundeck-1.3.1.tgz
-    version: 1.3.1
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.1.0
-    created: "2025-01-14T11:31:16.010527382+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Rundeck
-    digest: 27b2f7cac4dff74d8b93b38324271c5082b6c4a62f52ae4348173f78a77e6b5c
-    name: rundeck
-    urls:
-    - rundeck-1.3.0.tgz
-    version: 1.3.0
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.1.0
-    created: "2025-01-14T11:31:16.004289121+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Rundeck
-    digest: e358a7231caf614802b0b85df03dcd9f37b2c628b467d897025463ebd117162b
-    name: rundeck
-    urls:
-    - rundeck-1.2.0.tgz
-    version: 1.2.0
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.1.0
-    created: "2025-01-14T11:31:15.993869471+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Rundeck
-    digest: f0963d6969843038cb7989dd458924f218a27eaf697c6791a08b1e901a109e17
-    name: rundeck
-    urls:
-    - rundeck-1.1.0.tgz
-    version: 1.1.0
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.1.0
-    created: "2025-01-14T11:31:15.987706101+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Rundeck
-    digest: 934f0f00bab8eb9293b1119749411e9bee1b631325323257aee54656e1aee205
-    name: rundeck
-    urls:
-    - rundeck-1.0.0.tgz
-    version: 1.0.0
   rundeck-option-provider:
   - annotations:
       category: API
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.046751507+07:00"
+    created: "2025-01-15T14:44:49.64708663+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Rundeck Option Provider
-    digest: cc8be3fc3927c6f02504ac4545d141384c9539d72128558d1e64b1cd8fd9c4ea
+    digest: e01f2c1f848b62109adde3c5b96c35d7c11242aefc558c6b4b8c360bdbbc73f2
     name: rundeck-option-provider
     urls:
     - rundeck-option-provider-1.2.0.tgz
     version: 1.2.0
-  - annotations:
-      category: API
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.044391347+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Rundeck Option Provider
-    digest: 6d64434a0a63bd3c79240af5c56d198f3d522209bf69c998e14ed748120e9798
-    name: rundeck-option-provider
-    urls:
-    - rundeck-option-provider-1.1.0.tgz
-    version: 1.1.0
-  - annotations:
-      category: API
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.041867302+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Rundeck Option Provider
-    digest: f32f67980425a4b8b47faa524b24fe974fd68136559d7bfa8f480eb18ceb8e08
-    name: rundeck-option-provider
-    urls:
-    - rundeck-option-provider-1.0.0.tgz
-    version: 1.0.0
   shared-volume:
   - annotations:
       category: Template
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.052487875+07:00"
+    created: "2025-01-15T14:44:49.648500684+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: Shared Longhorn volume
-    digest: b1b592150ef9da986d1ac95c3811ab5354b796b726b4567b2c83ab57a8e008b7
+    digest: 5e4b19c2665a37708d7ebdeb12d7155ee9ab8c0025dbf6a3c0dfc21817b9445b
     name: shared-volume
     urls:
     - shared-volume-1.0.1.tgz
     version: 1.0.1
-  - annotations:
-      category: Template
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.049617615+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: Shared Longhorn volume
-    digest: c1122436890195e429712744d03b75852f44dbb355d2653ccbf1bedcb5c95aac
-    name: shared-volume
-    urls:
-    - shared-volume-1.0.0.tgz
-    version: 1.0.0
   snmp-manager:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-01-14T11:31:16.060447252+07:00"
+    created: "2025-01-15T14:44:49.650792056+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
+    - name: maxscale
+      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
+      version: 1.x.x
     description: SVTECH snmp-manager
-    digest: 0cfff83644820bf34d492a9faa08e10b9abd4a28f7260bc9441b8a2a76cf93d1
+    digest: d5421cc2433cdc57fb8a3c362a072d9d2eb54e0a7f7310df7cb06b2021c22e77
     name: snmp-manager
     type: application
     urls:
     - snmp-manager-1.1.1.tgz
     version: 1.1.1
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-01-14T11:31:16.056250616+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH snmp-manager
-    digest: b6b8b7485694307bafb54be6b906b2099a0d7d784481907d2e1460a128e0f534
-    name: snmp-manager
-    type: application
-    urls:
-    - snmp-manager-1.1.0.tgz
-    version: 1.1.0
   streamlit:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.084717126+07:00"
+    created: "2025-01-15T14:44:49.652033367+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: x.x.x
     description: A Helm chart for Streamlit app
-    digest: a7ab97af36574b6d32c48ff9d8bdfde70399624478e592214f6a361e70b8d675
+    digest: c6d3f536b8473b5e83b537a1ff5ae160ed95587e8b76bf7aecf02201b4fb3b5c
     name: streamlit
     urls:
     - streamlit-0.6.1.tgz
     version: 0.6.1
-  - apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.081295171+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    description: A Helm chart for Streamlit app
-    digest: d42414545ec68da0a10549820c5d309451e75e0ef009903610bbeda023ffa608
-    name: streamlit
-    urls:
-    - streamlit-0.5.1.tgz
-    version: 0.5.1
-  - apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.07826321+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    description: A Helm chart for Streamlit app
-    digest: de67d5392243b57579039e4181287ae3a9aa362df75daf84dce47677124ce724
-    name: streamlit
-    urls:
-    - streamlit-0.4.1.tgz
-    version: 0.4.1
-  - apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.075320257+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    description: A Helm chart for Streamlit app
-    digest: db16d21671e3b63161e52c6140ca0296e84b779406d142ba52dbdab1a9133d03
-    name: streamlit
-    urls:
-    - streamlit-0.3.1.tgz
-    version: 0.3.1
-  - apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.072382807+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    - condition: global.syncthing.enabled
-      name: syncthing
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    description: A Helm chart for Streamlit app
-    digest: 3cde205df15779d9df6c55bfac06a9a10eb595576d162cc3da6966eebda0450e
-    name: streamlit
-    urls:
-    - streamlit-0.2.1.tgz
-    version: 0.2.1
-  - apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.066681072+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    - condition: global.syncthing.enabled
-      name: syncthing
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: x.x.x
-    description: A Helm chart for Streamlit app
-    digest: 4bd7de695752c2d0645b2450d806f37ce9da0f3e1796ae08b7872ac228991bb7
-    name: streamlit
-    urls:
-    - streamlit-0.2.0.tgz
-    version: 0.2.0
   syncthing:
   - annotations:
       category: Backend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.104148302+07:00"
+    created: "2025-01-15T14:44:49.654124167+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Syncthing
-    digest: 2e6180397aad6bc73eacc22c0f9fae0d66a9929be19dcf81bf97bcbc66f8c3ee
+    digest: 8d724527149c1f8aeda6dcbe3ff34d8e6d0da4860cd8a19de310a603c43683e0
     name: syncthing
     urls:
     - syncthing-1.3.2.tgz
     version: 1.3.2
-  - annotations:
-      category: Backend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.100961723+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Syncthing
-    digest: a59f3b7cd22a2a6f6237a735e03b2b4ca801690dfec88647d84f1acb24c5c8c6
-    name: syncthing
-    urls:
-    - syncthing-1.3.1.tgz
-    version: 1.3.1
-  - annotations:
-      category: Backend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.097881841+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Syncthing
-    digest: a1b017205d4d29d702355d27238c5c497b5482aa095a0eb7617a3abe8b852e60
-    name: syncthing
-    urls:
-    - syncthing-1.2.1.tgz
-    version: 1.2.1
-  - annotations:
-      category: Backend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.09476671+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Syncthing
-    digest: 3e48b1f862a7196f14be05da66683775ddf8f4dd015a2b1c600d273e57059748
-    name: syncthing
-    urls:
-    - syncthing-1.1.1.tgz
-    version: 1.1.1
-  - annotations:
-      category: Backend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.091633375+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Syncthing
-    digest: dc1b8d0b96f646cc7a5fdb42c355bd779cfee6ade171992a95da7d205c4ce088
-    name: syncthing
-    urls:
-    - syncthing-1.1.0.tgz
-    version: 1.1.0
-  - annotations:
-      category: Backend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.088575579+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Syncthing
-    digest: ffeb7bfb12c373e7a1e4ac6faa663c66665a7ee791343b7c185d018d3df9e4a5
-    name: syncthing
-    urls:
-    - syncthing-1.0.0.tgz
-    version: 1.0.0
   tacgui:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-01-14T11:31:16.118058421+07:00"
+    created: "2025-01-15T14:44:49.656901509+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: A Helm chart for Kubernetes
-    digest: e0c55284b7337e622084241ce1ef4251ba02bb5c7fb207efb349c53d7732f855
+    digest: d3f065a531740d17303fc099e007a531dc2ea54903704e1345f050455ff18215
     name: tacgui
     type: application
     urls:
     - tacgui-0.5.0.tgz
     version: 0.5.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-01-14T11:31:16.112926591+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: A Helm chart for Kubernetes
-    digest: fa52b0d6cabaf0ce1b71651a606d554eed157846dae47a3930bd78295cd672da
-    name: tacgui
-    type: application
-    urls:
-    - tacgui-0.4.0.tgz
-    version: 0.4.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-01-14T11:31:16.109409815+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: A Helm chart for Kubernetes
-    digest: 0d999abcc29f86b2f7a40a9099d96fe1a4a4b0227fd95cef9cb1178cfba0a83c
-    name: tacgui
-    type: application
-    urls:
-    - tacgui-0.3.0.tgz
-    version: 0.3.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-01-14T11:31:16.106524177+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: A Helm chart for Kubernetes
-    digest: d10998343fa19799065b2682c1ef221ff0e6f680546686cb6d72d1c2ac674b0d
-    name: tacgui
-    type: application
-    urls:
-    - tacgui-0.2.0.tgz
-    version: 0.2.0
   thruk:
   - annotations:
       category: Frontend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.127490523+07:00"
+    created: "2025-01-15T14:44:49.658554543+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Thruk
-    digest: d82a38f5e93841cafdc01b7b8f6824822be55f99b88536887c7d082ab42ddb46
+    digest: e1fceb7e3462a2d14ab879c4034407724819c836fa684b44eb5b4d5a80815a55
     name: thruk
     urls:
     - thruk-1.2.0.tgz
     version: 1.2.0
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.124361105+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Thruk
-    digest: b27eb251b55dc1edf96567bc029ce7b2ed9261b0234650fb4ce22b19d4efd9cc
-    name: thruk
-    urls:
-    - thruk-1.1.0.tgz
-    version: 1.1.0
-  - annotations:
-      category: Frontend
-    apiVersion: v2
-    appVersion: v1.0.0
-    created: "2025-01-14T11:31:16.121316167+07:00"
-    dependencies:
-    - name: common
-      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
-      version: 1.x.x
-    description: SVTECH Thruk
-    digest: f140a52c87a6f64e71b5424fb6e017393f51b9005880bea7b7b9ed50612c4cfd
-    name: thruk
-    urls:
-    - thruk-1.0.0.tgz
-    version: 1.0.0
-generated: "2025-01-14T11:31:15.315154806+07:00"
+generated: "2025-01-15T14:44:49.556769318+07:00"
