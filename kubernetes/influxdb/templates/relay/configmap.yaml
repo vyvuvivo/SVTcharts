@@ -12,9 +12,6 @@ metadata:
   annotations:
     "helm.sh/hook": pre-install
     "helm.sh/hook-weight": "-5"
-    {{- if .Values.commonAnnotations }}
-    {{- include "common.tplvalues.render" ( dict "value" .Values.commonAnnotations "context" $ ) | nindent 4 }}
-    {{- end }}
 data:
   relay.toml: |-
     {{ include "common.tplvalues.render" (dict "value" .Values.relay.configuration "context" $) | nindent 4 }}
