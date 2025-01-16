@@ -109,7 +109,7 @@ entries:
           url: https://airflow.apache.org/docs/apache-airflow/2.3.0/_images/context.png
     apiVersion: v2
     appVersion: 2.3.0
-    created: "2025-01-15T14:44:49.570131923+07:00"
+    created: "2025-01-16T11:34:20.4332339+07:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -117,7 +117,7 @@ entries:
       version: 10.5.3
     description: The official Helm chart to deploy Apache Airflow, a platform to programmatically
       author, schedule, and monitor workflows
-    digest: 49b9b2cf84cdd619d3fa5c99f336c2c0ee0dc6e862425846a519de8b12709eb6
+    digest: f69ea94e010f76eda777985293397bdaffeeff66a7e4bbbe2af005860aa5e7ad
     home: https://airflow.apache.org/
     keywords:
     - apache
@@ -139,7 +139,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 14.5.0
-    created: "2025-01-15T14:44:49.576406917+07:00"
+    created: "2025-01-16T11:34:20.4332339+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
@@ -149,7 +149,7 @@ entries:
     description: This PostgreSQL cluster solution includes the PostgreSQL replication
       manager, an open-source tool for managing replication and failover on PostgreSQL
       clusters.
-    digest: ef37d8f524099eebfc5d4a0d3332db763c691bba5b0a695b6a81f0aa1bd2b817
+    digest: 6ec8347c6640f6d06f3cbf9a7e5d5040909241ee3b4a3cf2d2f9b2f8fafc731a
     home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql-ha
     icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
     keywords:
@@ -175,13 +175,13 @@ entries:
   bngblaster:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.57785887+07:00"
+    created: "2025-01-16T11:34:20.4412394+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: x.x.x
     description: A Helm chart for Streamlit app
-    digest: e288a69c9c68fa952e2d40290123656d6a975886381dd3ca417bd0194ce6b1a4
+    digest: aaea14dd549394281231a77e6ffa1a8672e3211318399fd4798e4bb01a6a476b
     name: bngblaster
     urls:
     - bngblaster-v0.6.2.tgz
@@ -191,10 +191,10 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.4.3
-    created: "2025-01-15T14:44:49.578677824+07:00"
+    created: "2025-01-16T11:34:20.4412394+07:00"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
-    digest: e869fa7e0cf11d512af5d2a0359bd28a1fede35e63bb5bfbe3e3d4868d96ef66
+    digest: 5d872b5467c46982104265e47b55cc4dcb60104a7c470e893ff3b3bba15cc93f
     name: common
     urls:
     - common-1.4.3.tgz
@@ -204,7 +204,7 @@ entries:
       category: Frontend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.58213276+07:00"
+    created: "2025-01-16T11:34:20.4422596+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
@@ -215,7 +215,7 @@ entries:
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Rundeck CSV View
-    digest: 2529da07f881b0e05db34004d41c8e62da181672bb46e90bd2378d2f13367247
+    digest: ff276cfbd1cb8dc1b98a358f692136f71edeff6aaf05e656f798817423a5cbc0
     name: csv-view
     urls:
     - csv-view-1.2.0.tgz
@@ -223,9 +223,9 @@ entries:
   daloradius:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-01-15T14:44:49.583677413+07:00"
+    created: "2025-01-16T11:34:20.4422596+07:00"
     description: A Helm chart for Kubernetes
-    digest: ac5d7a54cd42c8fdc5bef8947364e7c81d9251398e6e68a8fc80d5c0c903a0fe
+    digest: d67b013ddd63de7201d9bf86154d56b08f5e390ed6304052adbe8dbca0b49778
     name: daloradius
     type: application
     urls:
@@ -236,7 +236,7 @@ entries:
       category: Frontend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.585131051+07:00"
+    created: "2025-01-16T11:34:20.4422596+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
@@ -244,7 +244,7 @@ entries:
       - bitnami-common
       version: 1.x.x
     description: SVTECH Debuger
-    digest: 17c467de1aa1c9083b4cfe40738279a80d4e1b7cce40356980e508e8362fdd5c
+    digest: 6862c2f335e5e9f9370e01a221beba25717bbac704377868e78dfd7afcb20a44
     name: debuger
     urls:
     - debuger-1.2.0.tgz
@@ -252,13 +252,13 @@ entries:
   docxtemplate:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.586507977+07:00"
+    created: "2025-01-16T11:34:20.4422596+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: x.x.x
     description: A Helm chart for Tender Document Generator app
-    digest: dd0da6874e6194fc22a92020d70a0fbce7e15a22bae8ea6e5b1f0815358d760c
+    digest: 7ae4118fa4ebef97ebddcbbeafc40beb2bd1f3bae06a7fc7ca0251bb62db233c
     name: docxtemplate
     urls:
     - docxtemplate-v0.6.1.tgz
@@ -268,13 +268,13 @@ entries:
       category: elasticsearch
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.587684777+07:00"
+    created: "2025-01-16T11:34:20.4422596+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: elasticsearch
-    digest: e6c6a8003b364b85f296333e1cad2ecbbec69791f74a6e25c4e45fd847d7b026
+    digest: f0f7cdb5404da032abe28b2450db9f0ba24e20f08ea4098302537c82641a6ddf
     name: elasticsearch
     urls:
     - elasticsearch-1.0.0.tgz
@@ -284,13 +284,13 @@ entries:
       category: filebeat
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.588719697+07:00"
+    created: "2025-01-16T11:34:20.4422596+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: filebeat
-    digest: 24d018b8600062ea5e5ddd2b813ae1e1073d62a66b57830bc69cc9736816a6ad
+    digest: 95608b4dc47dd28627b1220ea8b2c1d5c087f49c7ed2fb106aee1f9c7f3ab3db
     name: filebeat
     urls:
     - filebeat-1.0.0.tgz
@@ -300,7 +300,7 @@ entries:
       category: AccessManagement
     apiVersion: v2
     appVersion: 3.0.26
-    created: "2025-01-15T14:44:49.597086315+07:00"
+    created: "2025-01-16T11:34:20.4503863+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
@@ -308,7 +308,7 @@ entries:
     description: FreeRADIUS is a modular, high performance free RADIUS suite developed
       and distributed under the GNU General Public License, version 2, and is free
       for download and use.
-    digest: bf4d7602bcaf2e0c5f83ee2deb82dca599d04af18ac589ddc6ecd69651097788
+    digest: c1847f25d0acd37436073c53118a00f3dff8429bb7f54ff22a20d68ce82228f6
     name: freeradius
     type: application
     urls:
@@ -319,13 +319,13 @@ entries:
       category: Frontend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.59855451+07:00"
+    created: "2025-01-16T11:34:20.4513991+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Gitlist
-    digest: 434438dc29a4c89b7082c9374c0c4f4f0218da07925578c5aca193ebef9df342
+    digest: e3bf990029f6c39c749daf4553bb2d884ea8552f0f767e31ca8918d1a7b7c4f6
     name: gitlist
     urls:
     - gitlist-1.1.0.tgz
@@ -335,7 +335,7 @@ entries:
       category: Frontend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.601936645+07:00"
+    created: "2025-01-16T11:34:20.4532397+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
@@ -347,7 +347,7 @@ entries:
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Grafana
-    digest: 46c100be371913272b9e3782e1abcc130d656f093c0dd03b0a3352ad9d479a91
+    digest: 49fd777eba37564b8fa229a784939d1b04e33af64f7591be5d4d4fc06ef90487
     name: grafana
     urls:
     - grafana-1.2.1.tgz
@@ -357,13 +357,13 @@ entries:
       category: Storage
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.603818936+07:00"
+    created: "2025-01-16T11:34:20.4532397+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH HostPath Persistent Volume
-    digest: a153922adbcf88e19b71710e7fec4cad4f296caba54b590bdade77cb67b2ad2d
+    digest: 0380be445b1d8737bf214a0754d2fcd703772bdc88faec9c5b98be7512feb15c
     name: host-path-pv
     urls:
     - host-path-pv-1.1.1.tgz
@@ -373,7 +373,7 @@ entries:
       category: Backend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.611573258+07:00"
+    created: "2025-01-16T11:34:20.4588422+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
@@ -388,7 +388,7 @@ entries:
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Icinga2
-    digest: b78480cb2f4c153e1b0550219c5b0e006f7958f836907e1309c2dd89edc0bae6
+    digest: 97b7931a4bce5b8766a78033596cc15be4711b7cb1c8ebc8401a852a4ceebb0a
     name: icinga2
     urls:
     - icinga2-1.3.3.tgz
@@ -398,13 +398,13 @@ entries:
       category: backend
     apiVersion: v2
     appVersion: v1.7.0
-    created: "2025-01-15T14:44:49.61299446+07:00"
+    created: "2025-01-16T11:34:20.4588422+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Icinga2 Report
-    digest: 3e738aa551104d6041c6b24483ac1b934a1248e2e85749e3977839207e68e079
+    digest: ff757ab46a021249c18ef63bdb091a1a522ba7638790ba040673c069592d991d
     name: icinga2-report
     urls:
     - icinga2-report-1.1.0.tgz
@@ -414,7 +414,7 @@ entries:
       category: icingaweb
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.618132021+07:00"
+    created: "2025-01-16T11:34:20.4659128+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
@@ -422,7 +422,7 @@ entries:
     - name: icinga2
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
-    digest: ddc56630d3e36dce45c0922d0ac841533b6c3d9033953b33949116dd9f639eb5
+    digest: 0c2db3444bdc5200816bd21fe40dbfe48724291cd947391c2b5d6359809d1832
     name: icingaweb
     urls:
     - icingaweb-1.5.1.tgz
@@ -432,7 +432,28 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 2.0.6
-    created: "2025-01-15T14:44:49.621400963+07:00"
+    created: "2025-01-16T11:34:20.4659128+07:00"
+    dependencies:
+    - name: common
+      repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
+      version: 1.x.x
+    description: InfluxDB(TM) is an open source time-series database designed to handle
+      large write and read loads in real-time.
+    digest: 96249aeeddd96f44ef7adb8502cfdc6c285d6c4a819bfdb81bb081323f0bc786
+    keywords:
+    - influxdb
+    - tick
+    - database
+    - timeseries
+    name: influxdb
+    urls:
+    - influxdb-2.2.3.tgz
+    version: 2.2.3
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 2.0.6
+    created: "2025-01-16T11:34:20.4659128+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
@@ -454,13 +475,13 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.622696371+07:00"
+    created: "2025-01-16T11:34:20.4659128+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH ingress-nginx
-    digest: 75e3220df1e61d6b96f8f2fe8f8f9bdf97bf74011788757a3982b4671fd7bb58
+    digest: 9003935d0f055b3956ad84e0577e0764f0d0ac53a1a8599b3bc6b4ac21c39073
     name: ingress-nginx
     urls:
     - ingress-nginx-1.0.0.tgz
@@ -468,13 +489,13 @@ entries:
   juniper-syslog-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-01-15T14:44:49.623782917+07:00"
+    created: "2025-01-16T11:34:20.4659128+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: A Helm chart for Kubernetes
-    digest: 986539d6f81553f8a4f03fdc2a3ddbe3b7c5c48a72b1de22b7eb749c5951f4df
+    digest: 00ab32adc43c6487d4c53946bc1a45f7f7d30d0680b917f036a97909f011f509
     name: juniper-syslog-api
     type: application
     urls:
@@ -485,13 +506,13 @@ entries:
       category: kibana
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.62481942+07:00"
+    created: "2025-01-16T11:34:20.4659128+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: kibana
-    digest: 79efe19e810313749a57e6d58b3b6021972fc0d50c5734cc7b68fe3329b29162
+    digest: c6a3718851af2efee869ff82a1a760d52c84ec0ca57070878eed119beb506d17
     name: kibana
     urls:
     - kibana-1.0.0.tgz
@@ -501,13 +522,13 @@ entries:
       category: logstash
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.629179606+07:00"
+    created: "2025-01-16T11:34:20.4739313+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: logstash
-    digest: 229cec08b26f1901bf7111f9b5d4fec0e1a9c27423abbf6508ce40a9f16258db
+    digest: 7d6180ca7ecc2eca752c184069f10d7e0c6d10f752cd6dec23b0ca2b76d950ea
     name: logstash
     urls:
     - logstash-1.0.0.tgz
@@ -517,14 +538,14 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 10.5.8
-    created: "2025-01-15T14:44:49.632119096+07:00"
+    created: "2025-01-16T11:34:20.4739313+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: MariaDB Galera is a multi-master database cluster solution for synchronous
       replication and high availability.
-    digest: 5471e78568c72f7831e33c90fb1799ddc18c58f7f216f49776d4af060397c0ba
+    digest: 9df6b47f31697f6f088180e31e2f7100410c9d120d20e18cb8fbcddace414012
     name: mariadb-galera
     urls:
     - mariadb-galera-5.6.8.tgz
@@ -534,13 +555,13 @@ entries:
       category: Maxscale
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.63325537+07:00"
+    created: "2025-01-16T11:34:20.4739313+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Maxscale
-    digest: 76085c3aabd953d880b078fdb06ed7bd8a6cb2ac284a1ab98a71b06f411ee5b3
+    digest: cee967cb1595118e2b2c0fadd9da6831066684c53d80579bfc94a488196e2577
     name: maxscale
     urls:
     - maxscale-1.4.1.tgz
@@ -550,13 +571,13 @@ entries:
       category: Frontend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.634591651+07:00"
+    created: "2025-01-16T11:34:20.4739313+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Nagvis
-    digest: 9209466b2eac4ee516b75d7c3489b51aba4b32a4e31e4bdc10abe4a0732711e3
+    digest: 5c07798d980a06a9c931829ea67870fe33c559c9a8d89dee90a626feca77d5fc
     name: nagvis
     urls:
     - nagvis-1.2.0.tgz
@@ -566,13 +587,13 @@ entries:
       category: Backend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.635931698+07:00"
+    created: "2025-01-16T11:34:20.4739313+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Postfix
-    digest: a28f4b58ad014cb07d3a8a85b2087c0253005dd164b64e06f7bf67fa86d6cbb0
+    digest: cd0c4977d2776502ba295d3365ef366fc89285f78280768dcfd523c0dff67d27
     name: postfix
     urls:
     - postfix-1.2.0.tgz
@@ -582,13 +603,13 @@ entries:
       category: Preparation
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.637060437+07:00"
+    created: "2025-01-16T11:34:20.4739313+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Preparation
-    digest: 309702f4bbb7c26fce27379a32c7867599c0f9bb83cf2fbbf1449eed64169b7e
+    digest: 02ca04298be0d399d0c64437021ddb2e03453a7444742c265986b10631b69775
     name: preparation
     urls:
     - preparation-1.4.1.tgz
@@ -598,13 +619,13 @@ entries:
       category: Proxy
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.641893849+07:00"
+    created: "2025-01-16T11:34:20.4739313+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Proxy
-    digest: cc26edf84222d89ba1b983c12e8466b9f1f301e9a41f146fde2395117ef44cf7
+    digest: a0d2456f53a8824a62fb46fb65b553b27fadcc645b765e7bc59ed943519e34cd
     name: proxy
     urls:
     - proxy-1.2.0.tgz
@@ -614,7 +635,7 @@ entries:
       category: Frontend
     apiVersion: v2
     appVersion: v1.1.0
-    created: "2025-01-15T14:44:49.645804252+07:00"
+    created: "2025-01-16T11:34:20.4819437+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
@@ -626,7 +647,7 @@ entries:
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Rundeck
-    digest: 3576e3dcd114914de73182fb2ce2559780ad382d322eeee7cf9aa930839f2c6d
+    digest: b4a8c0c4ce5b9800191a81e8e2eeb271cdd06b7469e92934c7b5ff2a58c79c89
     name: rundeck
     urls:
     - rundeck-1.6.2.tgz
@@ -636,13 +657,13 @@ entries:
       category: API
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.64708663+07:00"
+    created: "2025-01-16T11:34:20.4829632+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Rundeck Option Provider
-    digest: e01f2c1f848b62109adde3c5b96c35d7c11242aefc558c6b4b8c360bdbbc73f2
+    digest: 34c8cd44b23d5261002f97d378cfa1df60915cd193b29fe26baf072a7ead11a6
     name: rundeck-option-provider
     urls:
     - rundeck-option-provider-1.2.0.tgz
@@ -652,13 +673,13 @@ entries:
       category: Template
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.648500684+07:00"
+    created: "2025-01-16T11:34:20.4829632+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: Shared Longhorn volume
-    digest: 5e4b19c2665a37708d7ebdeb12d7155ee9ab8c0025dbf6a3c0dfc21817b9445b
+    digest: 705f9cc6404d8deb59731ad655f2974664a17f6d8c486f69f2dda5b543c037fc
     name: shared-volume
     urls:
     - shared-volume-1.0.1.tgz
@@ -666,7 +687,7 @@ entries:
   snmp-manager:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-01-15T14:44:49.650792056+07:00"
+    created: "2025-01-16T11:34:20.4829632+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
@@ -675,7 +696,7 @@ entries:
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH snmp-manager
-    digest: d5421cc2433cdc57fb8a3c362a072d9d2eb54e0a7f7310df7cb06b2021c22e77
+    digest: b7a7db298bd0c85b3f5b6c93769a067ad1d9a08394aede59d9688cd2b8049200
     name: snmp-manager
     type: application
     urls:
@@ -684,13 +705,13 @@ entries:
   streamlit:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.652033367+07:00"
+    created: "2025-01-16T11:34:20.4829632+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: x.x.x
     description: A Helm chart for Streamlit app
-    digest: c6d3f536b8473b5e83b537a1ff5ae160ed95587e8b76bf7aecf02201b4fb3b5c
+    digest: 0832375ccee5a7a67e29200cb2afca10a76a5a4185c49db23a26653d528c9b69
     name: streamlit
     urls:
     - streamlit-0.6.1.tgz
@@ -700,13 +721,13 @@ entries:
       category: Backend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.654124167+07:00"
+    created: "2025-01-16T11:34:20.4829632+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Syncthing
-    digest: 8d724527149c1f8aeda6dcbe3ff34d8e6d0da4860cd8a19de310a603c43683e0
+    digest: f173cdb3a8faaf51de0ddfd35d70f9bf3c16612743327760ed3c5f893e382b9c
     name: syncthing
     urls:
     - syncthing-1.3.2.tgz
@@ -714,13 +735,13 @@ entries:
   tacgui:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-01-15T14:44:49.656901509+07:00"
+    created: "2025-01-16T11:34:20.4829632+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: A Helm chart for Kubernetes
-    digest: d3f065a531740d17303fc099e007a531dc2ea54903704e1345f050455ff18215
+    digest: 1e6f8bcc3925ae8b2b06f580be61fd75e8ba3d60982355b39f40910235fe5527
     name: tacgui
     type: application
     urls:
@@ -731,15 +752,15 @@ entries:
       category: Frontend
     apiVersion: v2
     appVersion: v1.0.0
-    created: "2025-01-15T14:44:49.658554543+07:00"
+    created: "2025-01-16T11:34:20.4829632+07:00"
     dependencies:
     - name: common
       repository: https://vyvuvivo.github.io/SVTcharts/artifacthub/
       version: 1.x.x
     description: SVTECH Thruk
-    digest: e1fceb7e3462a2d14ab879c4034407724819c836fa684b44eb5b4d5a80815a55
+    digest: da176c2d51e2938ddd59b5718606064cbf1fc92c77d82ced228bcf9539c085d3
     name: thruk
     urls:
     - thruk-1.2.0.tgz
     version: 1.2.0
-generated: "2025-01-15T14:44:49.556769318+07:00"
+generated: "2025-01-16T11:34:20.4282058+07:00"
