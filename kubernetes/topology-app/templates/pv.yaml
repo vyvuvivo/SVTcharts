@@ -1,0 +1,17 @@
+{{- $basePath := .Values.global.basePath }}
+{{- $namespace := .Release.Namespace }}
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: "{{ $namespace }}-{{ .Chart.Name }}-pv" 
+  annotations:
+    helm.sh/resource-policy: keep
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: "1Gi"
+  hostPath:
+    path: {{ $basePath }}/{{ $namespace }}/{{ .Chart.Name }}
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: {{ $namespace }}-{{ .Chart.Name }}-storageclass
