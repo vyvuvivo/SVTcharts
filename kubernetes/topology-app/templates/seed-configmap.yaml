@@ -1,3 +1,5 @@
+{{ $ns:= .Release.Namespace }}
+{{ $clustername:= .Values.clusterDomain }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -326,31 +328,31 @@ data:
         Order: 1
       - ID: 3
         Title: Icingaweb
-        Href: http://icingaweb:8080/icingaweb/
+        Href: http://icingaweb.{{ $ns }}.svc.{{ $clustername }}:8080/icingaweb/
         Order: 2
       - ID: 4
         Title: Grafana
-        Href: http://grafana:3000/grafana/
+        Href: http://grafana.{{ $ns }}.svc.{{ $clustername }}:3000/grafana/
         Order: 3
       - ID: 5
         Title: Topology
-        Href: http://nagvis:80/nagvis/
+        Href: http://nagvis.{{ $ns }}.svc.{{ $clustername }}:80/nagvis/
         Order: 4
       - ID: 6
         Title: Gitlist
-        Href: http://gitlist:80/gitlist/
+        Href: http://gitlist.{{ $ns }}.svc.{{ $clustername }}:80/gitlist/
         Order: 5
       - ID: 7
         Title: Rundeck
-        Href: http://rundeck:4440/rundeck
+        Href: http://rundeck.{{ $ns }}.svc.{{ $clustername }}:4440/rundeck
         Order: 6
       - ID: 8
         Title: csv
-        Href: http://proxy:80/csv/
+        Href: http://proxy.{{ $ns }}.svc.{{ $clustername }}:80/csv/
         Order: 7
         Hidden: true
       - ID: 9
         Title: static_csv
-        Href: http://proxy:80/static_csv/
+        Href: http://proxy.{{ $ns }}.svc.{{ $clustername }}:80/static_csv/
         Order: 8
         Hidden: true
