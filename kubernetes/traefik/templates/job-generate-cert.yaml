@@ -25,5 +25,5 @@ spec:
                 echo "Generating TLS certificate..."
                 openssl req -x509 -nodes -days {{ .Values.tls.durationDays }} -newkey rsa:2048 -keyout /tls.key -out /tls.crt -subj "/CN={{ .Values.tls.commonName }}"
               fi
-              kubectl create secret tls {{ .Values.tls.secretName }} --cert=/tls.crt --key=/tls.key
+              kubectl create secret tls {{ .Values.tls.secretName }} --cert=/tls.crt --key=/tls.key --dry-run=client -o yaml | kubectl apply -f -
       restartPolicy: Never
