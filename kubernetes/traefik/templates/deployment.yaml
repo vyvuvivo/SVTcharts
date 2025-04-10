@@ -68,6 +68,9 @@ spec:
             - --entryPoints.websecure.address={{ .Values.args.entryPoints.websecure.address }}
             - --entryPoints.websecure.asDefault={{ .Values.args.entryPoints.websecure.asDefault }}
             - --entryPoints.traefik.address={{ .Values.args.entryPoints.traefik.address }}
+            - --entrypoints.web.http.redirections.entryPoint.to=websecure
+            - --entrypoints.web.http.redirections.entryPoint.scheme=https
+            - --entrypoints.web.http.redirections.entrypoint.permanent=true
           env:
             {{- range $key, $value := .Values.env }}
             - name: {{ $key }}
