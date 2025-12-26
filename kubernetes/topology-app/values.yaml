@@ -122,24 +122,16 @@ autoscaling:
 # Additional volumes on the output Deployment definition.
 volumes:
 - name: seed-configs
-  configMap:
-    name: seed-configs
-- name: topology-app-data
-  persistentVolumeClaim:
-    claimName: topology-app-pvc
-- name: traefik-config
-  configMap:
-    name: traefik-config
+  projected:
+    sources:
+    - configMap:
+        name: seed-configs
+    - configMap:
+        name: traefik-config
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts:
 - name: seed-configs
   mountPath: /opt
-- name: topology-app-data
-  mountPath: /data
-- name: traefik-config
-  mountPath: /opt/traefik.yaml
-  subPath: traefik.yaml
-
 
 nodeSelector: {}
 
