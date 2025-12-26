@@ -1,6 +1,9 @@
 # Default values
 # Global values. Define shared volumes and persistence volumes. For example:
 global:
+  imageRegistry: ghcr.io
+  basePath: /opt
+  frontendVip: "192.168.1.1"
   sharedVolume:
     enabled: false
   sharedPersistenceVolume: []
@@ -118,10 +121,10 @@ autoscaling:
 
 # Additional volumes on the output Deployment definition.
 volumes:
-- name: seed-config
+- name: seed-configs
   configMap:
-    name: seed-config
-- name: topology-app-config
+    name: seed-configs
+- name: topology-app-data
   persistentVolumeClaim:
     claimName: topology-app-pvc
 - name: traefik-config
@@ -129,14 +132,13 @@ volumes:
     name: traefik-config
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts:
-- name: seed-config
-  mountPath: /opt/seed.yaml
-  subPath: seed.yaml
+- name: seed-configs
+  mountPath: /opt
+- name: topology-app-data
+  mountPath: /data
 - name: traefik-config
   mountPath: /opt/traefik.yaml
   subPath: traefik.yaml
-- name: topology-app-config
-  mountPath: /data
 
 
 nodeSelector: {}
@@ -159,7 +161,7 @@ affinity:
 env:
   TZ: Asia/Ho_Chi_Minh
 
-topologyAppConfig:
+topologyAppEnv:
   BACKEND_URL: "http://topology-app/api/v1/traefik"
   DATABASE_URL: "topo:juniper123@tcp(mariadb:3306)/topologyapp?parseTime=true"
   FRONTEND_URL: "http://topology-web"
@@ -168,3 +170,81 @@ topologyAppConfig:
   UPLOAD_DIR: "/data"
   PERMISSIONS_ENABLED: "true"
   TRAEFIK_TEMPLATE: "/opt/traefik.yaml"
+
+config:
+  menuItems:
+    icingaweb:
+      enabled: true
+      id: 3
+      title: Icingaweb
+      href: "http://icingaweb:8080/icingaweb/"
+      order: 2
+    grafana:
+      enabled: true
+      id: 4
+      title: Grafana
+      href: "http://grafana:3000/grafana/"
+      order: 3
+    rundeck:
+      enabled: true
+      id: 5
+      title: Rundeck
+      href: "http://rundeck:4440/rundeck"
+      order: 4
+    gitlist:
+      enabled: true
+      id: 6
+      title: Gitlist
+      href: "http://gitlist:80/gitlist/"
+      order: 5
+  datasources:
+    redis:
+      enabled: true
+      id: 1
+      title: Redis
+      type: Redis
+      storage: true
+      url: "redis://redis:6379"
+      username: ""
+      password: ""
+      schema: "0"
+    arango_storage:
+      enabled: true
+      id: 2
+      title: Arango-Storage
+      type: Arango
+      storage: true
+      url: "http://arangodb:8529"
+      username: ""
+      password: ""
+      schema: "_system"
+    arango_topo:
+      enabled: true
+      id: 3
+      title: Arango-Topo
+      type: Arango
+      storage: false
+      url: "http://arangodb:8529"
+      username: ""
+      password: ""
+      schema: "svtech"
+    icinga_redis:
+      enabled: true
+      id: 4
+      title: Icinga-Redis
+      type: Redis
+      storage: false
+      url: "redis://icinga2:6379"
+      username: ""
+      password: ""
+      schema: "0"
+    internal_grafana:
+      enabled: true
+      id: 5
+      title: Internal-Grafana
+      type: Grafana
+      storage: false
+      url: "http://grafana:3000/grafana/"
+      username: "thrukadmin"
+      password: "thrukadmin"
+      schema: "0"
