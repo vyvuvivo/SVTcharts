@@ -6,7 +6,7 @@
     {
       "ID": 1,
       "Name": "test",
-      "Payload": {{ $raw | nindent 6 }},
+      "Payload": {{ $raw }},
       "CreatedBy": 1
     }
   ]
