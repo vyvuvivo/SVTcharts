@@ -6,7 +6,7 @@
     {
       "ID": 1,
       "Name": "test",
-      "Payload": {{ $raw }},
+      "Payload": "{{ $raw }}",
       "CreatedBy": 1
     }
   ]
