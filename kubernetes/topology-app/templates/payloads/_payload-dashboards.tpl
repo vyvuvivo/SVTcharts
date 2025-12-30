@@ -1,97 +1,60 @@
 {{- define "payload-dashboards" -}}
 {
   "layout": "2x2",
-  "A": {
-    "layout": "single",
-    "A": {
-      "url": "{{ .Values.topologyAppEnv.TRAEFIK_TEMPLATE }}",
-      "title": "Tinh te",
-      "external": true
-    },
-    "B": {
-      "url": "",
-      "title": "",
-      "external": false
-    },
-    "C": {
-      "url": "",
-      "title": "",
-      "external": false
-    },
-    "D": {
-      "url": "",
-      "title": "",
-      "external": false
-    }
-  },
-  "B": {
-    "layout": "single",
-    "A": {
-      "url": "",
-      "title": "",
-      "external": false
-    },
-    "B": {
-      "url": "",
-      "title": "",
-      "external": false
-    },
-    "C": {
-      "url": "",
-      "title": "",
-      "external": false
-    },
-    "D": {
-      "url": "",
-      "title": "",
-      "external": false
-    }
-  },
-  "C": {
-    "layout": "single",
-    "A": {
-      "url": "",
-      "title": "",
-      "external": false
-    },
-    "B": {
-      "url": "",
-      "title": "",
-      "external": false
-    },
-    "C": {
-      "url": "",
-      "title": "",
-      "external": false
-    },
-    "D": {
-      "url": "",
-      "title": "",
-      "external": false
-    }
-  },
-  "D": {
-    "layout": "single",
-    "A": {
-      "url": "",
-      "title": "",
-      "external": false
-    },
-    "B": {
-      "url": "",
-      "title": "",
-      "external": false
-    },
-    "C": {
-      "url": "",
-      "title": "",
-      "external": false
-    },
-    "D": {
-      "url": "",
-      "title": "",
-      "external": false
-    }
-  }
+  "A[layout]": "single",
+  "A[A][url]": "https://example.com",
+  "A[A][title]": "Tinh te",
+  "A[A][external]": "true",
+  "A[B][url]": "",
+  "A[B][title]": "",
+  "A[B][external]": "false",
+  "A[C][url]": "",
+  "A[C][title]": "",
+  "A[C][external]": "false",
+  "A[D][url]": "",
+  "A[D][title]": "",
+  "A[D][external]": "false",
+
+  "B[layout]": "single",
+  "B[A][url]": "",
+  "B[A][title]": "",
+  "B[A][external]": "false",
+  "B[B][url]": "",
+  "B[B][title]": "",
+  "B[B][external]": "false",
+  "B[C][url]": "",
+  "B[C][title]": "",
+  "B[C][external]": "false",
+  "B[D][url]": "",
+  "B[D][title]": "",
+  "B[D][external]": "false",
+
+  "C[layout]": "single",
+  "C[A][url]": "",
+  "C[A][title]": "",
+  "C[A][external]": "false",
+  "C[B][url]": "",
+  "C[B][title]": "",
+  "C[B][external]": "false",
+  "C[C][url]": "",
+  "C[C][title]": "",
+  "C[C][external]": "false",
+  "C[D][url]": "",
+  "C[D][title]": "",
+  "C[D][external]": "false",
+
+  "D[layout]": "single",
+  "D[A][url]": "",
+  "D[A][title]": "",
+  "D[A][external]": "false",
+  "D[B][url]": "",
+  "D[B][title]": "",
+  "D[B][external]": "false",
+  "D[C][url]": "",
+  "D[C][title]": "",
+  "D[C][external]": "false",
+  "D[D][url]": "",
+  "D[D][title]": "",
+  "D[D][external]": "false"
 }
 {{- end }}

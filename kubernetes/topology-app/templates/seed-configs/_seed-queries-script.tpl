@@ -49,6 +49,7 @@ main () {
   fi
 
   INPUT_FILE="$2"
+  INPUT_FILE_NAME=$(basename "$INPUT_FILE")
 
   if [[ ! -f "$INPUT_FILE" ]]; then
     echo "❌ Input file '$INPUT_FILE' not found!"
@@ -56,7 +57,7 @@ main () {
   fi
 
   # Automatically derive output filename
-  OUTPUT_FILE="${INPUT_FILE%.*}_with_ids.json"
+  OUTPUT_FILE="/tmp/${INPUT_FILE_NAME%.*}_with_ids.json"
 
   #Step 1: Get the datasourceID from Grafana
   echo -e "\n--- Step 1: Get the datasourceID from Grafana"

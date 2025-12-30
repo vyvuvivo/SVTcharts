@@ -23,7 +23,7 @@ data:
   seed-states.yaml: |-
     {{- include "seed-states" . | nindent 4 }}
   seed-templates.yaml: |-
-    {{- include "payload-templates" . | nindent 4 }}
+    {{- include "seed-templates" . | nindent 4 }}
   seed-icons.yaml: |-
     {{- include "seed-icons" . | nindent 4 }}
   seed-queries.yaml: |-
