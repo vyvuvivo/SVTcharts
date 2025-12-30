@@ -170,24 +170,28 @@ config:
       enabled: true
       id: 3
       title: Icingaweb
+      permalink: "icingaweb"
       href: "http://icingaweb.nmaa.svc.cluster.local:8080/icingaweb/"
       order: 2
     grafana:
       enabled: true
       id: 4
       title: Grafana
+      permalink: "grafana"
       href: "http://grafana.nmaa.svc.cluster.local:3000/grafana/"
       order: 3
     rundeck:
       enabled: true
       id: 5
       title: Rundeck
+      permalink: "rundeck"
       href: "http://rundeck.nmaa.svc.cluster.local:4440/rundeck"
       order: 4
     gitlist:
       enabled: true
       id: 6
       title: Gitlist
+      permalink: "gitlist"
       href: "http://gitlist.nmaa.svc.cluster.local:80/gitlist/"
       order: 5
   datasources:
