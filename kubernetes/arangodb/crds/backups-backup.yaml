@@ -62,7 +62,7 @@ spec:
         openAPIV3Schema:
           type: object
           x-kubernetes-preserve-unknown-fields: true
-      served: true
+      served: false
       storage: false
       additionalPrinterColumns:
         - jsonPath: .spec.policyName

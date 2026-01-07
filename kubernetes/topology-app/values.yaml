@@ -156,7 +156,7 @@ env:
 
 topologyAppEnv:
   BACKEND_URL: "http://topology-app/api/v1/traefik"
-  DATABASE_URL: "topo:juniper123@tcp(mariadb:3306)/topologyapp?parseTime=true"
+  DATABASE_URL: "topology:juniper123@tcp(mariadb:3306)/topology?parseTime=true"
   FRONTEND_URL: "http://topology-web"
   PORT: "4000"
   REDIS_ADDRESS: "redis:6379"
@@ -211,7 +211,7 @@ config:
       title: Arango-Storage
       type: Arango
       storage: true
-      url: "http://arangodb:8529"
+      url: "https://arangodb:8529"
       username: ""
       password: ""
       schema: "_system"
@@ -221,7 +221,7 @@ config:
       title: Arango-Topo
       type: Arango
       storage: false
-      url: "http://arangodb:8529"
+      url: "https://arangodb:8529"
       username: ""
       password: ""
       schema: "svtech"
